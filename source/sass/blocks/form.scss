@@ -1,0 +1,36 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.form__list {
+  @include m.list-reset;
+  font-weight: 700;
+  line-height: 18px;
+  color: v.$dark;
+}
+
+.form__title {
+  color: v.$accent;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form__section {
+  border: 0;
+}
+
+.form__input {
+  padding: 17px 0;
+}
+
+.form__input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  opacity: 0.3;
+}
+
+.form__footnote {
+  font-size: 14px;
+  line-height: 16px;
+  color: v.$grey;
+}

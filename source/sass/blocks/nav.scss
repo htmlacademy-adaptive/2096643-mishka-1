@@ -1,23 +1,22 @@
-$dark: #000000;
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
 
 .nav__logo-container {
-  box-shadow: 0px 1px 0px 0px #ECECEC, 0px 1px 0px 0px #ECECEC inset;
+  box-shadow: 0 1px 0 0 #ECECEC, 0 1px 0 0 #ECECEC inset;
 }
 
 .nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include m.list-reset;
   font-weight: 700;
 }
 
 .nav__item {
-  box-shadow: 0px 1px 0px 0px #ECECEC;
+  box-shadow: 0 1px 0 0 #ECECEC;
 }
 
 .nav__link {
   text-decoration: none;
-  color: $dark;
+  color: v.$dark;
 }
 
 .nav__button {

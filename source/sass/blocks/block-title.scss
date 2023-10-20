@@ -1,0 +1,6 @@
+@use "../base/variables.scss" as v;
+
+.block-title {
+  color: v.$dark;
+  font-weight: 700;
+}

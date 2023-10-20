@@ -1,0 +1,13 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.catalog__title{
+background-color: v.$silver;
+padding-top: 101px;
+padding-bottom: 75px;
+text-align: center;
+}
+
+.catalog__list {
+  @include m.list-reset
+}

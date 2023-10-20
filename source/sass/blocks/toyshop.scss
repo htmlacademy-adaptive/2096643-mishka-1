@@ -1,19 +1,24 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
 .toyshop__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include m.list-reset
 }
 
 .toyshop__item {
   padding-top: 24px;
   padding-left: 30px;
   padding-bottom: 31px;
-  background-color: #63D1BB;
+  background-color: v.$accent;
+}
+
+.toyshop__item--colorblock {
+  background-color: v.$accent-dark;
 }
 
 .toyshop__link {
   text-decoration: none;
-  color: #ffffff;
+  color: v.$light;
   font-size: 19px;
   font-weight: 700;
 }

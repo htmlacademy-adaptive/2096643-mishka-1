@@ -1,3 +1,6 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
 *,
 *::after,
 *::before {
@@ -13,7 +16,8 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
   line-height: 24px;
-  background-color: #ffffff;
+  font-weight: 400;
+  background-color: v.$light;
 }
 
 .visually-hidden {

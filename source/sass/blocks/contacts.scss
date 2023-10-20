@@ -1,0 +1,7 @@
+@use "../base/variables.scss" as v;
+
+.contacts__item {
+  font-size: 14px;
+  line-height: 30px;
+  color: v.$grey;
+}

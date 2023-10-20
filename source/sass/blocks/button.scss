@@ -1,0 +1,15 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: v.$grey;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 2px solid v.$grey;
+  border-radius: 2px;
+}

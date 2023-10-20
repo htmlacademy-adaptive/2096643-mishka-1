@@ -1,0 +1,11 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.social {
+  @include m.list-reset;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 28px;
+  background-color: v.$silver;
+}
+
