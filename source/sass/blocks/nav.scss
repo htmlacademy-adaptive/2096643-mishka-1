@@ -1,0 +1,31 @@
+$dark: #000000;
+
+.nav__logo-container {
+  box-shadow: 0px 1px 0px 0px #ECECEC, 0px 1px 0px 0px #ECECEC inset;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+}
+
+.nav__item {
+  box-shadow: 0px 1px 0px 0px #ECECEC;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $dark;
+}
+
+.nav__button {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+.sale-nav {
+  display: none;
+}

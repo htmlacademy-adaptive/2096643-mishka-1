@@ -1,3 +1,7 @@
-// Начните писать стили здесь
+@use "./base/mixin.scss";
+@use "./base/base.scss";
 @use "./base/fonts.scss";
 @use "./base/variables.scss";
+@use "./blocks/nav.scss";
+@use "./blocks/toyshop.scss";
+@use "./blocks/section-title.scss"
