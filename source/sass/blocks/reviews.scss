@@ -1,0 +1,26 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.reviews__list {
+  @include m.list-reset;
+}
+
+.reviews__item {
+  display: none;
+  font-size: 15px;
+  line-height: 30px;
+  color: v.$grey;
+}
+
+.reviews__item--active {
+  display: block;
+}
+
+.reviews__autor {
+  font-weight: 700;
+}
+
+.reviews__toggle {
+  background-color: transparent;
+  border: 1px solid v.$light-grey;
+}

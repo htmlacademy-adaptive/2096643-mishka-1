@@ -1,0 +1,8 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.about__list {
+  @include m.list-reset;
+  font-weight: 700;
+  line-height: 20px;
+}

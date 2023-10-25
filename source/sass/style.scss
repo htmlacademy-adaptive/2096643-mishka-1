@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+@use "./base/base.scss";
+@use "./base/fonts.scss";
+@use "./blocks/nav.scss";
+@use "./blocks/toyshop.scss";
+@use "./blocks/section-title.scss";
+@use "./blocks/featured.scss";
+@use "./blocks/button.scss";
+@use "./blocks/about.scss";
+@use "./blocks/reviews.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/social.scss";
+@use "./blocks/developed.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/card.scss";
+@use "./blocks/production.scss";
+@use "./blocks/block-title.scss";
+@use "./blocks/form.scss";
+@use "./blocks/order.scss";
+@use "./blocks/footer.scss"
+

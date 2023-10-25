@@ -1,0 +1,30 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.nav__logo-container {
+  box-shadow: 0 1px 0 0 #ECECEC, 0 1px 0 0 #ECECEC inset;
+}
+
+.nav__list {
+  @include m.list-reset;
+  font-weight: 700;
+}
+
+.nav__item {
+  box-shadow: 0 1px 0 0 #ECECEC;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: v.$dark;
+}
+
+.nav__button {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+.sale-nav {
+  display: none;
+}

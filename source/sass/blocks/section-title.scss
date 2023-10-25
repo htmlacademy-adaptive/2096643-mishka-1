@@ -1,0 +1,14 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.section-title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+  color: v.$dark;
+}
+
+.section-title--mobile {
+  font-size: 27px;
+}

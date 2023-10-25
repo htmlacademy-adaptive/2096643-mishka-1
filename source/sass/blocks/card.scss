@@ -1,0 +1,30 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.card__image {
+  width: 260px;
+  height: 195px;
+  background-color: v.$silver;
+}
+
+.card__title {
+  margin: 0;
+}
+
+.card__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 30px;
+  color: v.$grey;
+}
+
+.card__price {
+  font-size: 15px;
+  font-weight: 700;
+  color: v.$dark;
+}
+
+.card__button {
+  background-color: transparent;
+  border: none;
+}
