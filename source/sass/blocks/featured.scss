@@ -15,7 +15,8 @@
   color: v.$grey;
 }
 
-.featured__parameters {
+.featured__list {
+  @include m.list-reset;
   font-size: 15px;
   line-height: 20px;
   color: v.$grey;
