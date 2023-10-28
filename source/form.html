@@ -43,20 +43,20 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Форма заказа.</h1>
+      <h1 class="order__title section-title">Вязание на заказ</h1>
       <section class="order">
-        <h2 class="order__title section-title">Вязание на заказ</h2>
+        <h2 class="visually-hidden">Форма заказа.</h2>
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form" action="#">
           <fieldset class="form__section form__section--type">
-            <legend class="form__title">Тип</legend>
+            <h3 class="form__title">Тип</h3>
             <ul class="form__list">
               <li class="form__item"><label><input  class="form__subtitle" type="radio" checked>Аксессуар для интерьера</label></li>
               <li class="form__item"><label><input  class="form__subtitle" type="radio">Детская игрушка</label></li>
             </ul>
           </fieldset>
           <fieldset class="form__section form__section--color">
-            <legend class="form__title">Цвет</legend>
+            <h3 class="form__title">Цвет</h3>
             <ul class="form__list">
               <li class="form__item"><label class="form__subtitle"><input type="checkbox" checked>Белый</label></li>
               <li class="form__item"><label class="form__subtitle"><input type="checkbox" checked>Серый</label></li>
@@ -67,22 +67,22 @@
             </ul>
           </fieldset>
           <fieldset class="form__section form__section--name">
-            <legend class="form__title">ФИО</legend>
+            <h3 class="form__title">ФИО</h3>
             <ul class="form__list">
-              <li class="form__item"><label class="form__subtitle">Имя:<input class="form__input" type="text" placeholder="Введите ваше имя*"></label></li>
+              <li class="form__item"><label class="form__subtitle">Имя:<input class="form__input" type="name" placeholder="Введите ваше имя*"></label></li>
               <li class="form__item"><label class="form__subtitle">Фамилия:<input class="form__input" type="text" placeholder="Укажите фамилию*"></label></li>
               <li class="form__item"><label class="form__subtitle">Отчество:<input class="form__input" type="text" placeholder="Отчество, если желаете"></label></li>
             </ul>
           </fieldset>
           <fieldset class="form__section form__section--contacts">
-            <legend class="visually-hidden">Контактные данные</legend>
+            <h3 class="visually-hidden">Контактные данные</h3>
             <ul class="form__list">
               <li class="form__item"><label class="form__title">тел<input class="form__input form__input--tel" type="tel" placeholder="+7 XXX XXX XX XX*"></label></li>
               <li class="form__item"><label class="form__title">e-mail<input class="form__input form__input--email" type="email" placeholder="Ваш Email*"></label></li>
             </ul>
           </fieldset>
           <fieldset class="form__section form__section--info">
-            <legend class="visually-hidden">Дополнительная информация.</legend>
+            <h3 class="visually-hidden">Дополнительная информация.</h3>
             <label class="form__title">Доп<textarea class="form__input" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea></label>
           </fieldset>
           <input class="form__button button" type="submit" value="Отправить заказ">
