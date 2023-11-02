@@ -7,8 +7,15 @@
   line-height: 30px;
   margin: 0;
   color: v.$dark;
+  @media (min-width: v.$tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
 }
 
 .section-title--mobile {
-  font-size: 27px;
+  @media (max-width: v.$onli-mobile-width) {
+    font-size: 27px;
+  }
 }

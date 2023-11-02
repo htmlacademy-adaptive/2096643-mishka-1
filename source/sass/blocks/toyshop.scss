@@ -1,24 +1,66 @@
 @use "../base/variables.scss" as v;
 @use "../base/mixin.scss" as m;
 
+.toyshop {
+  background-color: v.$silver;//для удобства верстки
+  margin-bottom: 31px;
+  @include m.tablet {
+    margin-bottom: 51px;
+  }
+
+  @include m.desktop {
+    margin-bottom: 71px;
+  }
+}
+
+.toyshop__title {
+  height: 283px;
+  padding-top: 73px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+
+  @include m.tablet {
+    padding-top: 154px;
+    height: 580px;
+  }
+
+  @include m.desktop {
+    height: 626px;
+    padding-top: 157px;
+  }
+}
+
 .toyshop__list {
-  @include m.list-reset
+  @include m.list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @include m.tablet {
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .toyshop__item {
-  padding-top: 24px;
-  padding-left: 30px;
-  padding-bottom: 31px;
+  flex-grow: 1;
   background-color: v.$accent;
 }
 
-.toyshop__item--colorblock {
-  background-color: v.$accent-dark;
-}
-
 .toyshop__link {
+  display: block;
   text-decoration: none;
   color: v.$light;
   font-size: 19px;
   font-weight: 700;
+  padding-left: 36px;
+  padding-top: 25px;
+  padding-bottom: 34px;
+  padding-right: auto;
+  cursor: pointer;
+}
+
+.toyshop__item--colorblock {
+  background-color: v.$accent-dark;
 }
