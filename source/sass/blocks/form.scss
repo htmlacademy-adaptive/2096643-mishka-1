@@ -21,6 +21,11 @@
   margin-bottom: 43px;
 }
 
+.form__wrapper {
+  @include m.tablet {
+  background-color: v.$light-grey;
+  }
+}
 .form__section--color {
   margin-bottom: 43px;
   padding-left: 30px;
@@ -31,7 +36,7 @@
     padding-bottom: 69px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: v.$light-grey;
+
   }
 }
 

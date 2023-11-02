@@ -12,7 +12,7 @@
   <header class="main-header">
     <nav class="nav">
       <div class="nav__logo-container">
-        <a class="nav__logo">
+        <a class="nav__logo" href="index.html">
           <svg class="main-header__logo" xmlns="http://www.w3.org/2000/svg" width="86" height="35" viewBox="0 0 86 35"
             fill="none">
             <path
@@ -66,10 +66,12 @@
         </li>
       </ul>
       <ul class="nav__list sale-nav">
-        <ul class="sale-nav__wrapper">
+        <li class="nav__item">
+          <ul class="sale-nav__wrapper">
           <li class="nav__item sale-nav__item"><a class="nav__link" href="#">Новые поступления</a></li>
           <li class="nav__item sale-nav__item"><a class="nav__link" href="#">Распродажа</a></li>
         </ul>
+        </li>
         <li class="nav__item sale-nav__item sale-nav__text-block">Бесплатная доставка по России</li>
       </ul>
     </nav>
@@ -89,7 +91,8 @@
             <li class="form__item"><label class="form__subtitle"><input type="radio">Детская игрушка</label></li>
           </ul>
         </fieldset>
-        <fieldset class="form__section form__section--color">
+        <div class="form__wrapper">
+        <fieldset class="form__section form__section--color container">
           <h3 class="form__title">Цвет</h3>
           <ul class="form__list form__list--color">
             <li class="form__item "><label class="form__subtitle"><input type="checkbox" checked>Белый</label></li>
@@ -100,25 +103,28 @@
             <li class="form__item"><label class="form__subtitle"><input type="checkbox">Оранжевый</label></li>
           </ul>
         </fieldset>
+      </div>
         <fieldset class="form__section form__section--name container">
           <h3 class="form__title">ФИО</h3>
           <ul class="form__list form__list--name">
             <li><label class="form__subtitle form__subtitle-name-wrapper">Имя:<input class="form__input"
-                  type="name" placeholder="Введите ваше имя*"></label></li>
+                  type="text" placeholder="Введите ваше имя*"></label></li>
             <li><label class="form__subtitle form__subtitle-name-wrapper">Фамилия:<input class="form__input"
                   type="text" placeholder="Укажите фамилию*"></label></li>
             <li><label class="form__subtitle form__subtitle-name-wrapper">Отчество:<input class="form__input"
                   type="text" placeholder="Отчество, если желаете"></label></li>
           </ul>
         </fieldset>
-        <fieldset class="form__section form__section--tel">
+        <div class="form__wrapper">
+        <fieldset class="form__section form__section--tel container">
           <h3 class="form__title form__button-wrapper ">Тел</h3>
           <input class="form__input form__input-tel" type="tel" placeholder="+7 XXX XXX XX XX*">
         </fieldset>
-        <fieldset class="form__section form__section--email">
+        <fieldset class="form__section form__section--email container">
           <h3 class="form__title form__button-wrapper ">e-mail</h3>
           <input class="form__input form__input--email" type="email" placeholder="Ваш Email*">
         </fieldset>
+      </div>
         <fieldset class="form__section form__additional container">
           <h3 class="visually-hidden">Дополнительная информация.</h3>
           <label class="form__title form__additional-wrapper">Доп<textarea class="form__input form__input--additional" rows="8"
@@ -190,6 +196,4 @@
     </div>
   </footer>
 </body>
-</body>
-
 </html>
