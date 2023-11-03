@@ -1,8 +1,80 @@
 @use "../base/variables.scss" as v;
 @use "../base/mixin.scss" as m;
 
+.about {
+  @include m.tablet {
+    margin-bottom: 82px;
+  }
+
+  @include m.desktop {
+    margin-bottom: 90px;
+  }
+}
+
+.about__title {
+  margin-top: 31px;
+  margin-bottom: 82px;
+  padding: 0;
+
+  @include m.desktop {
+    padding-left: 175px;
+    margin-bottom: 40px;
+  }
+}
+
 .about__list {
   @include m.list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 83px;
   font-weight: 700;
   line-height: 20px;
+
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    row-gap: 110px;
+  }
+
+  @include m.desktop {
+    max-width: 650px;
+    margin-left: 175px;
+  }
+}
+
+.about__item--eco {
+  @include m.tablet {
+    order: 1;
+  }
+}
+
+.about__item--handmade {
+  @include m.tablet {
+    order: 2;
+  }
+}
+
+.about__item--price {
+  @include m.tablet {
+    order: 3;
+  }
+}
+
+.about__item--support {
+  @include m.tablet {
+    order: 4;
+  }
+}
+
+.about__item--likes{
+  @include m.tablet {
+    order: 5;
+  }
+}
+
+.about__item--pack {
+  @include m.tablet {
+    order: 6;
+  }
 }

@@ -1,31 +1,143 @@
 @use "../base/variables.scss" as v;
 @use "../base/mixin.scss" as m;
 
+.featured {
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: 292px 404px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 42px;
+  }
+
+  @include m.desktop {
+    grid-template-columns: 1fr 525px;
+    column-gap: 59px;
+  }
+}
+
+.featured__title-wrapper {
+
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid red;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+  @include m.desktop {
+    flex-direction: row-reverse;
+    gap: 43px;
+    width: max-content;
+    padding-left: 32px;
+    align-items: center;
+    grid-column: 1/-1;
+  }
+}
+
+.featured__title {
+  margin-bottom: 3px;
+}
+
 .featured__subtitle {
   line-height: 20px;
   font-weight: 700;
+  margin: 0;
   text-transform: uppercase;
   color: v.$accent;
+
+  @include m.tablet {
+    width: min-content;
+  }
 }
 
 .featured__text {
   font-size: 15px;
   line-height: 24px;
   margin: 0;
+  margin-top: 17px;
+  margin-bottom: 28px;
   color: v.$grey;
+
+  @include m.tablet {
+    grid-column: 1/2;
+    margin: 0;
+    margin-bottom: 36px;
+    outline: 1px solid red;
+  }
+
+  @include m.desktop {
+    padding-left: 225px;
+    margin-bottom: 60px;
+  }
 }
 
-.featured__parameters {
+.featured__list {
+  @include m.list-reset;
+  display: grid;
+  grid-template-columns: min-content 1fr;
   font-size: 15px;
   line-height: 20px;
   color: v.$grey;
+
+  @include m.tablet {
+    grid-column: 1/2;
+  }
+  @include m.desktop {
+    padding-left: 225px;
+  }
+}
+
+.featured__item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid v.$light-grey;
+}
+
+.featured__item--name {
+  padding-right: 30px;
 }
 
 .featured__image {
   width: 260px;
   height: 315px;
+  margin: 25px auto;
+
+  @include m.tablet {
+    width: 334px;
+    height: 404px;
+    grid-column: 2/-1;
+    grid-row: 2/5;
+    margin: 0;
+    outline: 1px solid red;
+  }
+
+  @include m.desktop {
+    width: 525px;
+    height: 636px;
+    grid-row:1/5;
+  }
+}
+
+.featured__price-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 36px;
+
+  @include m.tablet {
+    grid-column: 1/2;
+    outline: 1px solid red;
+  }
+
+  @include m.desktop {
+    padding-left: 225px;
+  }
 }
 
 .featured__price {
   font-weight: 700;
+  text-align: center;
 }
+
+

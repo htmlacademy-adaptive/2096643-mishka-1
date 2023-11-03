@@ -1,15 +1,28 @@
 @use "../base/variables.scss" as v;
 @use "../base/mixin.scss" as m;
 
-.order__title {
-  background-color: v.$silver;
-  padding-top: 74px;
-  padding-bottom: 73px;
-  text-align: center;
+.order {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .order__text {
   font-size: 13px;
   margin: 0;
   color: v.$grey;
+  margin-top: 17px;
+  margin-bottom: 29px;
+
+  @include m.tablet {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 66px;
+    margin-bottom: 81px;
+  }
+
+  @include m.desktop {
+    margin-top: 115px;
+    padding-left: 225px;
+    padding-right: 225px;
+  }
 }

@@ -1,8 +1,29 @@
 @use "../base/variables.scss" as v;
 @use "../base/mixin.scss" as m;
 
+.reviews {
+  @include m.tablet {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.reviews__title {
+  margin-bottom: 14px;
+  @include m.desktop {
+    padding-left: 174px;
+  }
+}
+
 .reviews__list {
   @include m.list-reset;
+  @include m.tablet {
+    order: 3;
+  }
+  @include m.desktop {
+    padding-left: 174px;
+  }
 }
 
 .reviews__item {
@@ -16,11 +37,47 @@
   display: block;
 }
 
+.reviews__wrapper {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
 .reviews__autor {
   font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__slider {
+  display: flex;
+
+  @include m.tablet {
+    order: 4;
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+  }
+}
+
+.reviews__autor-wrapper {
+  @include m.tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews__toggle {
   background-color: transparent;
   border: 1px solid v.$light-grey;
+  padding: 13px 42px 13px 38px;
+}
+
+.reviews__button {
+  margin-top: 38px;
+  margin-bottom: 45px;
+
+  @include m.tablet {
+    order: 2;
+    margin: 0;
+  }
 }
