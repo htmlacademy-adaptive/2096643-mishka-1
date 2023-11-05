@@ -2,8 +2,6 @@
 @use "../base/mixin.scss" as m;
 
 .nav {
-  outline: 1px solid yellow;
-
   @include m.tablet {
     position: relative;
     display: flex;
@@ -23,7 +21,6 @@
   display: flex;
   justify-content: center;
   box-shadow: 0 1px 0 0 v.$light-grey;
-  outline: 3px solid red;
 
   @include m.tablet {
     box-shadow: none;
@@ -79,7 +76,6 @@
 }
 
 .site-nav {
-  outline: 1px solid red;
   @include m.tablet {
     position: absolute;
     display: flex;
@@ -91,7 +87,6 @@
 
   @include m.desktop {
     position: static;
-    outline: 3px solid red;
     order: 1;
   }
 }
@@ -99,7 +94,6 @@
 .site-nav__item {
   @include m.tablet {
     padding-top: 21px;
-    outline: 1px solid blue;
   }
 
   @include m.desktop {
@@ -129,8 +123,8 @@
 
 .nav__button--search {
   @include m.tablet {
+    display: flex;
     padding: 36px 32px 34px 34px;
-    outline: 1px solid blue;
   }
 }
 
@@ -142,7 +136,6 @@
 
 .user-nav {
   @include m.tablet {
-    outline: 3px solid red;
     margin-left: auto;
   }
 
@@ -173,10 +166,10 @@
     right: 50px;
     top: 92px;
     padding-top: 18px;
-    outline: 1px solid red;
   }
 
   @include m.desktop {
+    width: 100%;
     justify-content: space-between;
     top: 95px;
     left: 0;

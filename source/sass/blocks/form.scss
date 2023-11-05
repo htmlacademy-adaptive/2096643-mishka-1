@@ -26,6 +26,7 @@
   background-color: v.$light-grey;
   }
 }
+
 .form__section--color {
   margin-bottom: 43px;
   padding-left: 30px;
@@ -36,7 +37,6 @@
     padding-bottom: 69px;
     padding-left: 50px;
     padding-right: 50px;
-
   }
 }
 
@@ -49,6 +49,7 @@
 .form__section--tel {
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 34px;
   @include m.tablet {
     background-color: v.$light-grey;
     padding-top: 65px;
@@ -78,12 +79,32 @@
 .form__title {
   color: v.$accent;
   font-weight: 700;
+  font-size: 17px;
   line-height: 16px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
 
+.form__title--type {
+  margin-bottom: 35px;
+}
+
+.form__title--color {
+  margin-bottom: 35px;
+}
+
+.form__title--name {
+  margin-bottom: 28px;
+}
+
+.form__title--tel {
+  margin-bottom: 5px;
+}
+
+.form__title--email {
+  margin-bottom: 5px;
+}
 .form__subtitle {
   display: flex;
   font-weight: 700;
@@ -117,12 +138,10 @@
 
 .form__list--type {
   gap: 24px;
-  padding-left: 60px;
 }
 
 .form__list--color {
   gap: 43px;
-  padding-left: 60px;
 }
 
 .form__input {

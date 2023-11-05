@@ -41,6 +41,11 @@
   @include m.tablet {
     justify-content: space-between;
     flex-grow: 1;
+    padding-left: 34px;
+  }
+
+  @include m.desktop {
+    padding: 27px;
   }
 }
 
@@ -56,6 +61,10 @@
   line-height: 30px;
   color: v.$grey;
   padding-bottom: 17px;
+  @include m.tablet {
+    font-size: 15px;
+    padding-bottom: 0;
+  }
 }
 
 
@@ -71,6 +80,9 @@
   font-size: 15px;
   font-weight: 700;
   color: v.$dark;
+  @include m.tablet {
+    font-size: 17px;
+  }
 }
 
 .card__button {

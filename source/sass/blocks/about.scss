@@ -2,8 +2,9 @@
 @use "../base/mixin.scss" as m;
 
 .about {
+  margin-bottom: 58px;
   @include m.tablet {
-    margin-bottom: 82px;
+    margin-bottom: 83px;
   }
 
   @include m.desktop {
@@ -15,10 +16,15 @@
   margin-top: 31px;
   margin-bottom: 82px;
   padding: 0;
+  margin-bottom: 28px;
+
+  @include m.tablet {
+    margin-bottom: 41px;
+  }
 
   @include m.desktop {
     padding-left: 175px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 }
 
@@ -26,9 +32,9 @@
   @include m.list-reset;
   display: flex;
   flex-direction: column;
-  gap: 83px;
+  gap: 30px;
   font-weight: 700;
-  line-height: 20px;
+
 
   @include m.tablet {
     display: grid;
@@ -40,6 +46,16 @@
   @include m.desktop {
     max-width: 650px;
     margin-left: 175px;
+  }
+}
+
+.about__item {
+  padding-top: 54px;
+  line-height: 20px;
+
+  @include m.tablet {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 

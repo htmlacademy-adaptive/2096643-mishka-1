@@ -12,4 +12,7 @@
   padding-bottom: 16px;
   border: 2px solid v.$grey;
   border-radius: 2px;
+  @include m.tablet {
+    font-size: 17px;
+  }
 }

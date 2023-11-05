@@ -7,15 +7,21 @@
   line-height: 30px;
   margin: 0;
   color: v.$dark;
-  @media (min-width: v.$tablet-width) {
+
+@include m.tablet {
     font-size: 43px;
     line-height: 50px;
   }
 
+@include m.desktop {
+  font-size: 53px;
+  line-height: 57px;
+}
+
 }
 
 .section-title--mobile {
-  @media (max-width: v.$onli-mobile-width) {
+  @include m.onli-mobile {
     font-size: 27px;
   }
 }

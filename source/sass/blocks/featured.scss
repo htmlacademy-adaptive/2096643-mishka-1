@@ -2,16 +2,21 @@
 @use "../base/mixin.scss" as m;
 
 .featured {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 76px;
+
   @include m.tablet {
     display: grid;
-    grid-template-columns: 292px 404px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr min-content;
     column-gap: 42px;
+    margin-bottom: 124px;
   }
 
   @include m.desktop {
     grid-template-columns: 1fr 525px;
     column-gap: 59px;
+    margin-bottom: 164px;
   }
 }
 
@@ -20,9 +25,9 @@
   @include m.tablet {
     display: flex;
     justify-content: space-between;
-    outline: 1px solid red;
     grid-column: 1/-1;
     grid-row: 1/2;
+    margin-bottom: 37px;
   }
 
   @include m.desktop {
@@ -32,6 +37,8 @@
     padding-left: 32px;
     align-items: center;
     grid-column: 1/-1;
+    margin-top: 64px;
+    margin-bottom: 35px;
   }
 }
 
@@ -48,6 +55,8 @@
 
   @include m.tablet {
     width: min-content;
+    line-height: 17px;
+    text-align: center;
   }
 }
 
@@ -60,31 +69,43 @@
   color: v.$grey;
 
   @include m.tablet {
+    max-width: 292px;
+    font-size: 17px;
+    line-height: 30px;
     grid-column: 1/2;
-    margin: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 36px;
-    outline: 1px solid red;
   }
 
   @include m.desktop {
-    padding-left: 225px;
+    max-width: 292px;
+    margin: 0;
+    margin-left: auto;
     margin-bottom: 60px;
   }
 }
 
 .featured__list {
   @include m.list-reset;
+  min-width: 292px;
   display: grid;
   grid-template-columns: min-content 1fr;
   font-size: 15px;
   line-height: 20px;
   color: v.$grey;
+  margin-left: auto;
+  margin-right: auto;
 
   @include m.tablet {
     grid-column: 1/2;
+    margin-bottom: 55px;
   }
   @include m.desktop {
-    padding-left: 225px;
+    max-width: 292px;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 
@@ -102,14 +123,17 @@
   width: 260px;
   height: 315px;
   margin: 25px auto;
+  background-color: v.$light-grey;//пока нет изображения
 
   @include m.tablet {
+    align-self:end;
+    justify-self: right;
     width: 334px;
     height: 404px;
     grid-column: 2/-1;
     grid-row: 2/5;
     margin: 0;
-    outline: 1px solid red;
+    order: -5;
   }
 
   @include m.desktop {
@@ -126,18 +150,32 @@
   margin-bottom: 36px;
 
   @include m.tablet {
+    gap: 33px;
     grid-column: 1/2;
-    outline: 1px solid red;
+    margin-bottom: 0;
   }
 
   @include m.desktop {
-    padding-left: 225px;
+    max-width: 292px;
+    margin-left: auto;
   }
 }
 
 .featured__price {
   font-weight: 700;
   text-align: center;
+
+  @include m.tablet {
+    font-size: 20px;
+  }
 }
 
-
+.featured__button {
+  padding-left: 70px;
+  padding-right: 70px;
+  align-self: center;
+  @include m.tablet {
+    padding-left: 86px;
+    padding-right: 86px;
+  }
+}
