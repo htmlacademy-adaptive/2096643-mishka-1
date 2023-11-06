@@ -2,8 +2,9 @@
 @use "../base/mixin.scss" as m;
 
 .nav {
+  position: relative;
+  z-index: 10;
   @include m.tablet {
-    position: relative;
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
@@ -23,6 +24,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: 0 1px 0 0 v.$light-grey;
+
 
   @include m.tablet {
     box-shadow: none;
@@ -58,6 +60,7 @@
 }
 
 .nav__list {
+
   @include m.list-reset;
   font-weight: 700;
 
@@ -82,13 +85,18 @@
 }
 
 .site-nav {
+  position: absolute;
+  background-color: v.$light;
+  width: 100%;
+  margin-top: 1px;
   @include m.tablet {
-    position: absolute;
     display: flex;
     gap: 40px;
     top: 92px;
     left: 50px;
     order: 2;
+    margin-top: 0;
+    width: auto;
   }
 
   @include m.desktop {
@@ -141,7 +149,15 @@
 }
 
 .user-nav {
+  position: absolute;
+  margin-top: 1px;
+  top: 237px;
+  background-color: v.$light;
+  width: 100%;
   @include m.tablet {
+    position: static;
+    width: auto;
+    margin-top: 0;
     margin-left: auto;
   }
 
@@ -253,5 +269,18 @@
 .nav--opened .user-nav {
   @include m.onli-mobile {
   display: block;
+  }
+}
+
+.nav--nojs .site-nav,
+.nav--nojs .user-nav {
+  @include m.onli-mobile {
+    position: static;
+    }
+}
+
+.nav--nojs .nav__toggle {
+  @include m.onli-mobile {
+    display: none;
   }
 }
