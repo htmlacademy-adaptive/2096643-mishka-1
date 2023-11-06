@@ -40,22 +40,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 70px;
-    row-gap: 110px;
+    row-gap: 60px;
   }
 
   @include m.desktop {
+    row-gap: 57px;
     max-width: 650px;
     margin-left: 175px;
   }
 }
 
 .about__item {
-  padding-top: 54px;
   line-height: 20px;
 
   @include m.tablet {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @include m.desktop {
+    max-width: 325px;
   }
 }
 

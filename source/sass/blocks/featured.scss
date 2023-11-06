@@ -2,6 +2,7 @@
 @use "../base/mixin.scss" as m;
 
 .featured {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 76px;
@@ -17,6 +18,30 @@
     grid-template-columns: 1fr 525px;
     column-gap: 59px;
     margin-bottom: 164px;
+  }
+}
+
+
+.featured::after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 6px;
+  bottom: -36px;
+  left: 0;
+  background-image: url("../img/zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  @include m.tablet {
+    height: 17px;
+    bottom: -52px;
+  }
+
+  @include m.desktop {
+    height: 23px;
+    bottom: -73px;
   }
 }
 
