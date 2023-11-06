@@ -65,10 +65,30 @@
   }
 }
 
+.about__item--eco::before {
+  display: block;
+  content: "";
+  width: 33px;
+  height: 38px;
+  background-image: url("../img/icon/eco-icon.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 16px;
+}
+
 .about__item--handmade {
   @include m.tablet {
     order: 2;
   }
+}
+
+.about__item--handmade::before {
+  display: block;
+  content: "";
+  width: 35px;
+  height: 34px;
+  background-image: url("../img/icon/handmade-icon.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 17px;
 }
 
 .about__item--price {
@@ -77,10 +97,30 @@
   }
 }
 
+.about__item--price::before {
+  display: block;
+  content: "";
+  width: 47px;
+  height: 27px;
+  background-image: url("../img/icon/price-icon.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 26px;
+}
+
 .about__item--support {
   @include m.tablet {
     order: 4;
   }
+}
+
+.about__item--support::before {
+  display: block;
+  content: "";
+  width: 55px;
+  height: 23px;
+  background-image: url("../img/icon/support-icon.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 26px;
 }
 
 .about__item--likes{
@@ -89,8 +129,27 @@
   }
 }
 
+.about__item--likes::before {
+  display: block;
+  content: "";
+  width: 34px;
+  height: 27px;
+  background-image: url("../img/icon/likes-icon.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 21px;
+}
 .about__item--pack {
   @include m.tablet {
     order: 6;
   }
+}
+
+.about__item--pack::before{
+  display: block;
+  content: "";
+  width: 33px;
+  height: 32px;
+  background-image: url("../img/icon/gift-icon.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 }

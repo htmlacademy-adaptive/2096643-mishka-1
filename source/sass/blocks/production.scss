@@ -24,6 +24,7 @@
 
 
 .production__title {
+  position: relative;
   width: min-content;
   padding-left: 91px;
   padding-top: 21px;
@@ -48,6 +49,27 @@
   }
 }
 
+.production__title::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 32px;
+  height: 22px;
+  top: 35px;
+  left: 25px;
+  background-image: url("../img/icon/video-icon.svg");
+  background-repeat: no-repeat;
+
+  @include m.tablet {
+    top: 40px;
+    left: -110px;
+  }
+
+  @include m.desktop {
+    top: 50px;
+    left: 0;
+  }
+}
 .production__text {
   margin: 0;
   font-size: 13px;

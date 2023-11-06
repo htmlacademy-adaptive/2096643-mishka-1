@@ -23,6 +23,7 @@
 }
 
 .contacts__title {
+  position: relative;
   margin-bottom: 28px;
   padding-left: 30px;
 
@@ -31,6 +32,24 @@
     padding-left: 174px;
     margin-bottom: 34px;
     margin-top: 78px;
+  }
+}
+
+.contacts__title::after {
+  @include m.tablet {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 47px;
+    height: 81px;
+    top: -35px;
+    right: 103px;
+    background-image: url("../img/icon/contacts-flag.svg");
+  }
+
+  @include m.desktop {
+    left: 50px;
+    top: -15px;
   }
 }
 

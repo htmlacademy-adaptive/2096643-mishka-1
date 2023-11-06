@@ -12,6 +12,10 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 153px;
+    padding-top: 82px;
+    padding-bottom: 47px;
+    background-image: url("../img/review-bgi.png");
+    background-repeat: no-repeat;
   }
 
   @include m.desktop {
