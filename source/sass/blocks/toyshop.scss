@@ -2,8 +2,12 @@
 @use "../base/mixin.scss" as m;
 
 .toyshop {
-  background-color: v.$silver;//для удобства верстки
   margin-bottom: 31px;
+  background-image: url("../img/toyshop-bgi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% -70px;
+
   @include m.tablet {
     margin-bottom: 51px;
   }
@@ -14,20 +18,20 @@
 }
 
 .toyshop__title {
-  height: 283px;
   padding-top: 73px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-bottom: 120px;
   text-align: center;
 
   @include m.tablet {
     padding-top: 154px;
-    height: 580px;
+    padding-bottom: 372px;
   }
 
   @include m.desktop {
-    height: 626px;
     padding-top: 157px;
+    padding-bottom: 355px;
   }
 }
 
@@ -41,14 +45,23 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  @include m.desktop {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 }
 
 .toyshop__item {
+  position: relative;
   flex-grow: 1;
   background-color: v.$accent;
 }
 
 .toyshop__link {
+  position: relative;
   display: block;
   text-decoration: none;
   color: v.$light;
@@ -57,8 +70,46 @@
   padding-left: 36px;
   padding-top: 25px;
   padding-bottom: 34px;
-  padding-right: auto;
+  padding-right: 0;
   cursor: pointer;
+
+  @include m.tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.toyshop__link--room::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 62px;
+  background-image: url("../img/icon/toyshop-room.svg");
+  background-repeat: no-repeat;
+  top: 23px;
+  right:36px;
+
+  @include m.tablet {
+    top: 30px;
+  }
+}
+
+.toyshop__link--toy::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url("../img/icon/toyshop-toy.svg");
+  background-repeat: no-repeat;
+  top: 21px;
+  right:27px;
+
+  @include m.tablet {
+    top: 31px;
+    right: 33px;
+  }
 }
 
 .toyshop__item--colorblock {

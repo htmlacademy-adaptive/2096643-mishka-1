@@ -10,7 +10,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="nav">
+    <nav class="nav nav--closed nav--nojs">
       <div class="nav__logo-container">
         <a class="nav__logo">
           <svg class="main-header__logo" xmlns="http://www.w3.org/2000/svg" width="86" height="35" viewBox="0 0 86 35"
@@ -81,7 +81,7 @@
     <section class="toyshop">
       <h2 class="visually-hidden">Магазин игрушек ручной работы.</h2>
       <p class="toyshop__title section-title section-title--mobile">Милые штуки ручной<br> работы для дома</p>
-      <ul class="toyshop__list container">
+      <ul class="toyshop__list">
         <li class="toyshop__item"><a class="toyshop__link toyshop__link--room" href="#">Предметы <br>интерьера</a></li>
         <li class="toyshop__item toyshop__item--colorblock"><a class="toyshop__link toyshop__link--toy"
             href="#">Детские<br>
@@ -113,12 +113,12 @@
       <h2 class="visually-hidden">О нас.</h2>
       <p class="about__title section-title">Коротко о нас:</p>
       <ul class="about__list">
-        <li class="about__item about__item--eco">Экологически чистые материалы</li>
-        <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
-        <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
-        <li class="about__item about__item--support">Поддержка отечественного производителя</li>
-        <li class="about__item about__item--pack">Поставляется в подарочной упаковке</li>
+        <li class="about__item about__item--eco">Экологически чистые&nbsp;материалы</li>
+        <li class="about__item about__item--price">Скандинавский стиль по&nbsp;российской цене</li>
+        <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+        <li class="about__item about__item--handmade">Связано вручную с&nbsp;любовью и умилением</li>
+        <li class="about__item about__item--support">Поддержка&nbsp;отечественного производителя</li>
+        <li class="about__item about__item--pack">Поставляется в&nbsp;подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews container">
@@ -176,11 +176,10 @@
         <li class="contacts__item contacts__item--name">e-mail:</li>
         <li class="contacts__item contacts__item--value"><a class="contacts__link">info@mimimishkashop.ru</a></li>
         <li class="contacts__item contacts__item--name">адрес:</li>
-        <li class="contacts__item contacts__item--value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
+        <li class="contacts__item contacts__item--value">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д. 19/8, офис 101
         </li>
       </ul>
-      <div class="map">
-      </div>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728549!2d30.320472477865028!3d59.93871647491521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1699021113267!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <button class="contacts__button button" type="button">Напишите нам</button>
     </section>
   </main>
@@ -242,6 +241,7 @@
     </div>
   </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

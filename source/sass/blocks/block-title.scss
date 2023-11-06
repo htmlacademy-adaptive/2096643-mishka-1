@@ -1,7 +1,13 @@
 @use "../base/variables.scss" as v;
 
+@use "../base/mixin.scss" as m;
+
 .block-title {
   font-size: 17px;
   color: v.$dark;
   font-weight: 700;
+
+  @include m.tablet {
+    font-size: 20px;
+  }
 }

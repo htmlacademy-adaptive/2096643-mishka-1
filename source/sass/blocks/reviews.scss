@@ -2,16 +2,59 @@
 @use "../base/mixin.scss" as m;
 
 .reviews {
-  @include m.tablet {
-    position: relative;
+  position: relative;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 89px;
+
+    @include m.tablet {
+    position: relative;
+    flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 153px;
+    padding-top: 82px;
+    padding-bottom: 47px;
+    background-image: url("../img/review-bgi.png");
+    background-repeat: no-repeat;
+  }
+
+  @include m.desktop {
+    margin-bottom: 161px;
   }
 }
+
+.reviews::after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 6px;
+  bottom: -45px;
+  left: 0;
+  background-image: url("../img/zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+
+  @include m.tablet {
+    height: 17px;
+    bottom: -68px;
+  }
+
+  @include m.desktop {
+    height: 23px;
+    bottom: -67px;
+  }
+}
+
 .reviews__title {
   margin-bottom: 14px;
+
+  @include m.tablet {
+    margin-bottom: 0;
+  }
   @include m.desktop {
+    margin-bottom: 35px;
     padding-left: 174px;
   }
 }
@@ -28,9 +71,18 @@
 
 .reviews__item {
   display: none;
+}
+
+.reviews__text {
   font-size: 15px;
   line-height: 30px;
+  margin-bottom: 33px;
   color: v.$grey;
+
+  @include m.tablet {
+    font-size: 17px;
+    margin-bottom: 61px;
+  }
 }
 
 .reviews__item--active {
@@ -40,29 +92,45 @@
 .reviews__wrapper {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
-}
-
-.reviews__autor {
-  font-weight: 700;
-  font-style: normal;
-}
-
-.reviews__slider {
-  display: flex;
-
   @include m.tablet {
-    order: 4;
-    position: absolute;
-    bottom: 25px;
-    right: 50px;
+    margin-top: 38px;
   }
 }
 
 .reviews__autor-wrapper {
-  @include m.tablet {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+    @include m.tablet {
+      margin-bottom:0;
+    }
+}
+
+.reviews__autor {
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+
+  @include m.tablet {
+    font-size: 18px;
+  }
+}
+
+.reviews__autor-nickname {
+  font-size: 17px;
+  @include m.tablet {
+    font-size: 18px;
+  }
+}
+
+.reviews__slider {
+  display: flex;
+  align-self: center;
+  @include m.tablet {
+    order: 4;
+    position: absolute;
+    bottom: 45px;
+    right: 50px;
   }
 }
 
@@ -73,11 +141,20 @@
 }
 
 .reviews__button {
+  padding-left: 65px;
+  padding-right: 65px;
   margin-top: 38px;
   margin-bottom: 45px;
 
   @include m.tablet {
+    align-self: center;
     order: 2;
     margin: 0;
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  @include m.desktop {
+    align-self: self-start;
   }
 }
