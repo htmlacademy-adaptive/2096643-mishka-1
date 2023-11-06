@@ -20,6 +20,8 @@
 .nav__logo-container {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-shadow: 0 1px 0 0 v.$light-grey;
 
   @include m.tablet {
@@ -43,8 +45,12 @@
   position: absolute;
   width: 20px;
   height: 14px;
-  right: 40px;
-  top: 20px;
+  right: 22px;
+  top: 24px;
+  padding: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
   @include m.tablet {
     display: none;
@@ -54,7 +60,6 @@
 .nav__list {
   @include m.list-reset;
   font-weight: 700;
-  display: none;
 
   @include m.tablet {
     display: flex;
@@ -198,5 +203,55 @@
 
   @include m.desktop {
     @include m.list-reset;
+  }
+}
+
+.nav--closed .nav__toggle::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: v.$dark;
+  top: 8px;
+  right: 5px;
+  box-shadow: 0 4px 0 0 v.$dark, 0 8px 0 0 v.$dark;
+}
+
+.nav--opened .nav__toggle::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  top: 12px;
+  right: 0;
+  background-color: v.$dark;
+  transform: rotate(-45deg);
+}
+
+.nav--opened .nav__toggle::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  top: 12px;
+  right: 0;
+  background-color: v.$dark;
+  transform: rotate(45deg);
+}
+
+.nav--closed .site-nav,
+.nav--closed .user-nav {
+  @include m.onli-mobile {
+    display: none;
+  }
+}
+
+.nav--opened .site-nav,
+.nav--opened .user-nav {
+  @include m.onli-mobile {
+  display: block;
   }
 }
