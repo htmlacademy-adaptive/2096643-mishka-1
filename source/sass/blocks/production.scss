@@ -96,6 +96,7 @@
 }
 
 .production__video {
+  position: relative;
   width: 260px;
   height: 150px;
   background-color: v.$silver;
@@ -112,6 +113,24 @@
     width: 682px;
     height: 455px;
     grid-row: 1/-1;
+  }
+}
+
+.production__video::after{
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100px;
+  height: 76px;
+  top: 25%;
+  right: 30%;
+  background-image: url("../img/icon/play.svg");
+
+  @include m.tablet {
+    width: 102px;
+    height: 77px;
+    top: 43%;
+    right: 43%;
   }
 }
 

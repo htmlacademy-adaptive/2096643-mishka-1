@@ -57,10 +57,6 @@
     font-size: 20px;
     line-height: 22px;
   }
-
-  @include m.desktop {
-    max-width: 325px;
-  }
 }
 
 .about__item--eco {
