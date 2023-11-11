@@ -8,6 +8,7 @@
   text-align: center;
 
   @include m.tablet {
+    position: relative;
     padding-top: 104px;
     padding-bottom: 72px;
   }
@@ -15,5 +16,25 @@
   @include m.desktop {
     padding-top: 101px;
     padding-bottom: 95px;
+  }
+}
+
+.page-form__title::after {
+  @include m.tablet {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 12px;
+    background-image: url("../img/zigzag-fill.svg");
+    background-repeat: repeat;
+    bottom: 0;
+    right: 0;
+  }
+
+  @include m.desktop {
+    height: 34px;
+    background-size: contain;
+    bottom: -20px;
   }
 }
