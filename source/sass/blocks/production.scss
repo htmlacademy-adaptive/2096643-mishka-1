@@ -119,15 +119,20 @@
   }
 }
 
-.production__video::after{
+.production__video-button{
   position: absolute;
   display: block;
-  content: "";
   width: 100px;
   height: 76px;
   top: 25%;
   right: 30%;
   background-image: url("../img/icon/play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
 
   @include m.tablet {
     width: 102px;
