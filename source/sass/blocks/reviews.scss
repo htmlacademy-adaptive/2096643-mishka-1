@@ -15,8 +15,13 @@
     margin-bottom: 153px;
     padding-top: 82px;
     padding-bottom: 47px;
-    background-image: url("../img/review-bgi.png");
+    background-image: url("../img/reviews-bgi.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution:2dppx){
+      background-image: url("../img/reviews-bgi@2x.png");
+      background-size: 350px auto;
+    }
   }
 
   @include m.desktop {

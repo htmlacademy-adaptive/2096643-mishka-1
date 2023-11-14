@@ -9,7 +9,7 @@
 
   @include m.tablet {
     display: grid;
-    grid-template-columns: 1fr min-content;
+    grid-template-columns: 1fr 334px;
     column-gap: 42px;
     margin-bottom: 124px;
   }

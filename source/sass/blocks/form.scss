@@ -35,7 +35,7 @@
     gap: 24px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 
@@ -64,8 +64,6 @@
 
   @include m.tablet {
     padding: 0;
-    margin-left: 50px;
-    margin-right: 50px;
   }
 }
 
@@ -161,7 +159,8 @@
 .form__input {
   display: flex;
   flex-grow: 1;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 8px;
   border: none;
   border-bottom: 2px solid v.$dark;
   background-color: transparent;
@@ -184,14 +183,13 @@
   font-size: 17px;
   line-height: 18px;
   opacity: 0.3;
-  padding-top: 17px;
-  padding-bottom: 18px;
 }
 
 .form__additional {
   display: flex;
   padding-left: 30px;
   padding-right: 30px;
+
 }
 
 .form__additional-wrapper {
@@ -215,6 +213,7 @@
   box-shadow: none;
   @include m.tablet {
     margin: 0;
+    margin-top: -20px;
   }
 
   @include m.desktop {
