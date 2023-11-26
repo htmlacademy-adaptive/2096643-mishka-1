@@ -145,6 +145,10 @@
   padding: 13px 42px 13px 38px;
 }
 
+.reviews__toggle--next {
+  transform: rotate(180deg);
+}
+
 .reviews__button {
   padding-left: 65px;
   padding-right: 65px;
