@@ -121,6 +121,10 @@
   }
 }
 
+.form__subtitle--type {
+  padding-left: 70px;
+}
+
 .form__list {
   @include m.list-reset;
   display: flex;
@@ -128,14 +132,17 @@
 }
 
 .form__list--type {
-  gap: 24px;
+  max-width: 270px;
+  gap: 25px;
   @include m.tablet {
+    max-width: max-content;
     gap: 58px;
   }
 }
 
 .form__list--color {
   gap: 43px;
+  padding-left: 70px;
   @include m.tablet {
     display: grid;
     grid-template-columns: max-content max-content;
