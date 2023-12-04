@@ -1,11 +1,21 @@
 $dark: #000000;
+$card-shadow: #0000001a; // rgba(0, 0, 0, 0.10)
+$modal-shadow: #00010140; // rgba(0, 1, 1, 0.25)
 $grey: #444444;
+$grey-opacity10: #4444441a;
+$grey-opacity30: #4444444d;
 $light-grey: #ececec;
+$light-silver: #c6c6c6;
 $light: #ffffff;
+$light-opacity30: #ffffff4d;
 $silver: #f1f1f1;
 $accent: #63d1bb;
+$accent-medium: #59d5bc;
 $accent-dark:#56c3b2;
-$index-bg: #f9f9f9;
+$accent-extradark: #46c1ae;
+$accent-extradark10:#46c1ae1a;
+$toyshop-bg: #f9f9f9;
+$onli-mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
-$onli-mobile-width: 767px;
+

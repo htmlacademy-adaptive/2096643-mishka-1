@@ -18,6 +18,15 @@
     width: 52px;
     height: 52px;
   }
+
+  &:hover,
+  &:focus {
+    border-color: v.$accent;
+  }
+
+  &:active {
+    border-color: v.$grey-opacity30;
+  }
 }
 
 .control__marker--checkbox {
@@ -29,6 +38,15 @@
   @include m.tablet {
     width: 52px;
     height: 52px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: v.$accent;
+  }
+
+  &:active {
+    border-color: v.$grey-opacity30;
   }
 }
 

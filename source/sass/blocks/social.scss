@@ -11,3 +11,13 @@
   background-color: v.$silver;
 }
 
+.social__icon {
+  &:hover,
+  &:focus {
+    color: v.$accent-extradark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

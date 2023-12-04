@@ -16,7 +16,17 @@
 
 .footer__logo {
   display: none;
+  color: v.$dark;
   @media (min-width: v.$tablet-width) {
     display: block;
+  }
+
+  &:hover,
+  &:focus {
+    color: v.$accent-extradark;
+  }
+
+  &:active{
+    opacity: 0.3;
   }
 }

@@ -4,6 +4,7 @@
 .nav {
   position: relative;
   z-index: 10;
+
   @include m.tablet {
     display: flex;
     padding-left: 50px;
@@ -43,6 +44,15 @@
   @include m.tablet {
     align-self: center;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav__toggle {
@@ -58,6 +68,15 @@
 
   @include m.tablet {
     display: none;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -85,6 +104,15 @@
     font-size: 15px;
     line-height: 24px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-nav {
@@ -92,6 +120,7 @@
   background-color: v.$light;
   width: 100%;
   margin-top: 1px;
+
   @include m.tablet {
     display: flex;
     gap: 40px;
@@ -128,6 +157,7 @@
   @include m.tablet {
     padding: 0;
   }
+
 }
 
 .nav__button {
@@ -137,7 +167,22 @@
   padding: 0;
   display: flex;
   gap: 36px;
+
 }
+
+.nav__box-icon {
+  opacity: 0.2;
+}
+
+.nav__button:hover .nav__box-icon {
+  opacity: 1;
+  color: v.$accent;
+}
+
+.nav__button:active .nav__box-icon {
+  opacity: 0.3;
+}
+
 
 .nav__button--search {
   @include m.tablet {
@@ -158,6 +203,7 @@
   top: 237px;
   background-color: v.$light;
   width: 100%;
+
   @include m.tablet {
     position: static;
     width: auto;
@@ -176,6 +222,7 @@
     font-size: 17px;
   }
 }
+
 
 .nav__button-text--search {
   @include m.tablet {
@@ -272,7 +319,7 @@
 .nav--opened .site-nav,
 .nav--opened .user-nav {
   @include m.onli-mobile {
-  display: block;
+    display: block;
   }
 }
 
@@ -280,7 +327,7 @@
 .nav--nojs .user-nav {
   @include m.onli-mobile {
     position: static;
-    }
+  }
 }
 
 .nav--nojs .nav__toggle {

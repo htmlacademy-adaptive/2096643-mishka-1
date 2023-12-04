@@ -12,3 +12,24 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('nav--opened');
   }
 });
+
+let modalWindow = document.querySelector('.modal');
+let modalToggle = document.querySelector('.featured__button');
+
+function openModal(modal) {
+  modal.classList.add('modal--opened');
+}
+function closeModal(modal) {
+  modal.classList.remove('modal--opened');
+}
+
+modalToggle.addEventListener('click', function () {
+  openModal(modalWindow)
+});
+
+modalWindow.addEventListener('click', function(e) {
+  if(e.target.classList.contains('modal') || e.target.classList.contains('button') ){
+    closeModal(modalWindow)
+  }
+})
+

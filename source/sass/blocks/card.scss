@@ -50,9 +50,27 @@
   }
 }
 
+.card:hover .card__wrapper,
+.card:focus .card__wrapper {
+  box-shadow: 0 6px 10px 0 v.$card-shadow;
+}
+
+.card:active .card__wrapper {
+  box-shadow: 0 3px 5px 0 v.$card-shadow;
+}
+
 .card__title {
   margin: 0;
   margin-bottom: 6px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__text {
@@ -89,4 +107,16 @@
 .card__button {
   background-color: transparent;
   border: none;
+  color: v.$dark;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    color: v.$accent;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
