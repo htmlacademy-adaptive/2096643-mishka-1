@@ -130,7 +130,13 @@
 
 .contacts__link {
   position: relative;
+
+  &:hover,
+  &:focus {
+    color: v.$accent-extradark;
+  }
 }
+
 
 .contacts__link::after {
   display: block;
@@ -141,6 +147,10 @@
   bottom: -2px;
   left: 0;
   background-color: v.$accent;
+
+  &:active {
+    background-color: v.$accent-extradark10; //why not work??
+  }
 }
 
 .contacts__button {

@@ -23,3 +23,16 @@
 .developed__link {
   display: flex;
 }
+
+.developed__icon {
+  color: v.$accent;
+
+  &:hover,
+  &:focus {
+    color: v.$accent-extradark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

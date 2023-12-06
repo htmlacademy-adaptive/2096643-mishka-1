@@ -1,0 +1,108 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.modal--opened {
+  display: block;
+}
+
+// .modal--closed {
+//   display: none;
+// }
+
+.modal__container{
+  position: relative;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: v.$light;
+  border: 1px solid v.$light-silver;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  padding: 28px 30px 46px 30px;
+  margin: auto;
+  width: max-content;
+  @include m.tablet {
+    padding-top: 37px;
+    padding-left: 92px;
+    padding-right: 92px;
+  }
+
+  @include m.desktop {
+    padding-left: 108px;
+    padding-right: 108px;
+
+  }
+}
+.modal__title {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: v.$dark;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  @include m.tablet {
+    font-size: 30px;
+    margin-bottom: 11px;
+    line-height: 57px;
+  }
+}
+
+.modal__text {
+  font-style: 15px;
+  line-height: 30px;
+  color: v.$grey;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 21px;
+  @include m.tablet {
+    font-size: 17px;
+    margin-bottom: 19px;
+  }
+}
+
+.modal__list {
+  @include m.list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 31px;
+  justify-content: space-between;
+}
+
+.modal__item {
+  flex-grow: 1;
+}
+
+.modal__button {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 2px solid v.$grey-opacity10;
+  background-color: transparent;
+  color: v.$grey;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+
+  &:hover {
+    border-color: v.$grey-opacity30;
+  }
+
+  &:focus,
+  &:active {
+    border-color: v.$accent;
+  }
+}
+
+

@@ -11,6 +11,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+
   @include m.tablet {
     display: grid;
     grid-template-columns: 167px 1fr;
@@ -20,6 +21,7 @@
 .form__section--type {
   margin-bottom: 43px;
 }
+
 .form__section-wrapper {
   @include m.tablet {
     background-color: v.$light-grey;
@@ -31,6 +33,7 @@
   flex-direction: column;
   gap: 34px;
   margin-bottom: 34px;
+
   @include m.tablet {
     gap: 24px;
     padding-top: 50px;
@@ -59,6 +62,7 @@
 }
 
 .form__section--contacts {
+  position: relative;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -91,6 +95,7 @@
 
 .form__title--contacts {
   margin-bottom: 5px;
+
   @include m.tablet {
     align-self: center;
   }
@@ -101,6 +106,7 @@
   font-weight: 700;
   line-height: 18px;
   color: v.$dark;
+
   @include m.tablet {
     font-size: 19px;
     line-height: 18px;
@@ -110,6 +116,7 @@
 .form__subtitle-name-wrapper {
   display: flex;
   flex-direction: column;
+
   @include m.tablet {
     flex-direction: row;
     align-items: center;
@@ -121,6 +128,10 @@
   }
 }
 
+.form__subtitle--type {
+  padding-left: 70px;
+}
+
 .form__list {
   @include m.list-reset;
   display: flex;
@@ -128,14 +139,19 @@
 }
 
 .form__list--type {
-  gap: 24px;
+  max-width: 270px;
+  gap: 25px;
+
   @include m.tablet {
+    max-width: max-content;
     gap: 58px;
   }
 }
 
 .form__list--color {
   gap: 43px;
+  padding-left: 70px;
+
   @include m.tablet {
     display: grid;
     grid-template-columns: max-content max-content;
@@ -151,6 +167,7 @@
 
 .form__list--name {
   gap: 21px;
+
   @include m.tablet {
     gap: 24px;
   }
@@ -162,12 +179,19 @@
   padding-top: 16px;
   padding-bottom: 8px;
   border: none;
-  border-bottom: 2px solid v.$dark;
+  box-shadow: 0 -2px 0 0 v.$dark inset;
   background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 -2px 0 0 v.$accent inset;
+  }
 }
 
 .form__input-contacts {
   width: 100%;
+
   @include m.desktop {
     max-width: 700px
   }
@@ -202,6 +226,15 @@
   }
 }
 
+.form__input--additional {
+  border: 2px solid v.$grey;
+
+  &:hover {
+    border-color: v.$accent-extradark;
+    box-shadow: none;
+  }
+}
+
 .form__input--additional::placeholder {
   padding-top: 0;
   padding-left: 17px;
@@ -211,6 +244,7 @@
   margin-top: 22px;
   border: 2px solid v.$grey;
   box-shadow: none;
+
   @include m.tablet {
     margin: 0;
     margin-top: -20px;
@@ -246,8 +280,34 @@
     padding-right: 32px;
   }
 }
+
 .form__footnote {
   font-size: 14px;
   line-height: 16px;
   color: v.$grey;
 }
+
+.form__icon {
+  position: absolute;
+  right: 30px;
+  top: -40px;
+  color: v.$dark;
+  opacity: 0.3;
+
+  @include m.tablet {
+    top: -60px;
+    right: 70px;
+  }
+
+  @include m.desktop {
+    left: 830px;
+  }
+}
+
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon,
+.form__input:active + .form__icon {
+  color: v.$accent;
+  opacity: 1;
+}
+

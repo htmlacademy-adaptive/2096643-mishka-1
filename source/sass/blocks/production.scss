@@ -23,6 +23,15 @@
     grid-template-rows: max-content max-content max-content;
     column-gap: 79px;
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 v.$card-shadow;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 v.$card-shadow;
+  }
 }
 
 
@@ -132,6 +141,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: 0.3s;
 
 
   @include m.tablet {
@@ -139,6 +149,19 @@
     height: 77px;
     top: 43%;
     right: 43%;
+  }
+
+  &:hover,
+  &:focus {
+    width: 120px;
+    height: 91px;
+    transition: 0.3s;
+  }
+
+  &:focus {
+    width: 81px;
+    height: 62px;
+    opacity: 0.3;
   }
 }
 

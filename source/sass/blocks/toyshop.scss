@@ -3,7 +3,7 @@
 
 .toyshop {
   margin-bottom: 31px;
-  background-color: v.$index-bg;
+  background-color: v.$toyshop-bg;
   background-image: url("../img/toyshop-bgi.jpg");
   background-repeat: no-repeat;
   background-size: auto 373px;
@@ -86,6 +86,59 @@
   position: relative;
   flex-grow: 1;
   background-color: v.$accent;
+  transition: margin 0.3s;
+
+  &:hover {
+    background-color: v.$accent-medium;
+    margin-top: -5px;
+    transition: margin 0.3s;
+  }
+
+  &:focus,
+  &:active {
+    margin-top: 0;
+  }
+}
+
+
+.toyshop__item--colorblock {
+  background-color: v.$accent-dark;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: v.$accent-extradark;
+  }
+}
+
+.toyshop__icon--room {
+  position: absolute;
+  top: 23px;
+  right: 36px;
+}
+
+.toyshop__item:hover .toyshop__icon {
+  opacity: 0.7
+}
+
+.toyshop__item:focus .toyshop__icon,
+.toyshop__item:active .toyshop__icon {
+  opacity: 0.3
+}
+
+.toyshop__icon--toy {
+  position: absolute;
+  top: 21px;
+  right: 27px;
+
+  &:hover {
+    opacity: 0.7
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.3
+  }
 }
 
 .toyshop__link {
@@ -107,39 +160,3 @@
   }
 }
 
-.toyshop__link--room::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 41px;
-  height: 62px;
-  background-image: url("../img/icon/toyshop-room.svg");
-  background-repeat: no-repeat;
-  top: 23px;
-  right: 36px;
-
-  @include m.tablet {
-    top: 30px;
-  }
-}
-
-.toyshop__link--toy::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/icon/toyshop-toy.svg");
-  background-repeat: no-repeat;
-  top: 21px;
-  right: 27px;
-
-  @include m.tablet {
-    top: 31px;
-    right: 33px;
-  }
-}
-
-.toyshop__item--colorblock {
-  background-color: v.$accent-dark;
-}

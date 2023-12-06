@@ -15,4 +15,28 @@
   @include m.tablet {
     font-size: 17px;
   }
+
+  &:hover {
+    background-color: v.$grey;
+    color: v.$light;
+  }
+
+  &:focus,
+  &:active {
+    color: v.$light-opacity30;
+  }
+}
+
+.button--accent {
+  width: 100%;
+  font-size: 17px;
+  line-height: 16px;
+  background-color: v.$accent;
+  color: v.$light;
+  border-color: v.$accent;
+  align-self: center;
+  &:hover {
+    background-color: v.$grey;
+    border-color: v.$grey;
+  }
 }

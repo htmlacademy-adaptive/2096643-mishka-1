@@ -143,6 +143,22 @@
   background-color: transparent;
   border: 1px solid v.$light-grey;
   padding: 13px 42px 13px 38px;
+
+  @include m.tablet {
+    border: none;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.reviews__toggle--next {
+  transform: rotate(180deg);
 }
 
 .reviews__button {
