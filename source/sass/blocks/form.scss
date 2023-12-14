@@ -290,12 +290,12 @@
 .form__icon {
   position: absolute;
   right: 30px;
-  top: -40px;
+  top: 22px;
   color: v.$dark;
   opacity: 0.3;
 
   @include m.tablet {
-    top: -60px;
+    top: 8px;
     right: 70px;
   }
 
