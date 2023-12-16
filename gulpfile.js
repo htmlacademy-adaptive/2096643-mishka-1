@@ -80,10 +80,10 @@ const createSprite = ()=>{
   return gulp.src('source/img/icon/*.svg')
   .pipe(svgo())
   .pipe(svgstore({
-    inlineSvg: true
+    inlineSvg:true
   }))
   .pipe (rename('sprite.svg'))
-  .pipe (gulp.dest('build/img'))
+  .pipe (gulp.dest('build/img'));
 }
 
 //Copy
