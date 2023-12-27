@@ -9,11 +9,12 @@
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
+    border-bottom: 1px solid v.$dark10;
   }
 
   @include m.desktop {
     justify-content: space-between;
-    max-width: 1050px;
+    max-width: 1150px;
     padding: 0;
     margin: 0 auto;
   }
@@ -22,8 +23,8 @@
 .nav__logo-container {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 16px;
   box-shadow: 0 1px 0 0 v.$light-grey;
 
 
@@ -36,13 +37,17 @@
     order: 2;
     margin: 0;
     padding-top: 9px;
-    padding-bottom: 7px;
+    padding-bottom: 2px;
   }
 }
 
 .nav__logo {
   @include m.tablet {
     align-self: center;
+  }
+
+  @include m.desktop {
+    margin-left: -70px;
   }
 
   &:hover {
@@ -59,7 +64,7 @@
   position: absolute;
   width: 20px;
   height: 14px;
-  right: 22px;
+  right: 26px;
   top: 24px;
   padding: 15px;
   border: none;
@@ -119,12 +124,12 @@
   position: absolute;
   background-color: v.$light;
   width: 100%;
-  margin-top: 1px;
+  margin-top: 2px;
 
   @include m.tablet {
     display: flex;
     gap: 40px;
-    top: 92px;
+    top: 90px;
     left: 50px;
     order: 2;
     margin-top: 0;
@@ -140,12 +145,22 @@
 
 .site-nav__item {
   @include m.tablet {
-    padding-top: 21px;
+    padding-top: 20px;
   }
 
   @include m.desktop {
     font-size: 17px;
-    padding: 32px 0;
+    padding: 32px 46px;
+  }
+}
+
+.site-nav__item--catalog {
+  border-right: 1px solid v.$dark10;
+
+}
+.site-nav__item--order {
+  @include m.desktop {
+    padding-left: 0;
   }
 }
 
@@ -170,6 +185,13 @@
 
 }
 
+.nav__button-text  {
+  margin-left: -10px;
+  @include m.tablet {
+    margin-left: 0;
+  }
+}
+
 .nav__box-icon {
   opacity: 0.2;
 }
@@ -187,13 +209,13 @@
 .nav__button--search {
   @include m.tablet {
     display: flex;
-    padding: 36px 32px 34px 34px;
+    padding: 36px 32px 33px 34px;
   }
 }
 
 .nav__button--box {
   @include m.tablet {
-    padding: 33px 0 33px 33px;
+    padding: 33px 0 30px 33px;
   }
 }
 
@@ -214,12 +236,14 @@
   @include m.desktop {
     order: 3;
     margin: 0;
+    padding-right: 50px;
   }
 }
 
 .user-nav__item {
   @include m.tablet {
     font-size: 17px;
+    border-left: 1px solid v.$dark10;
   }
 }
 
@@ -244,18 +268,24 @@
   @include m.desktop {
     width: 100%;
     justify-content: space-between;
-    top: 95px;
+    top: 90px;
     left: 0;
+    padding-left: 50px;
   }
 }
 
+// .sale-nav__item {
+//   @include m.desktop{
+//     padding-left: 50px;
+//   }
+// }
 .sale-nav__wrapper {
   display: none;
 
   @include m.desktop {
     @include m.list-reset;
     display: flex;
-    gap: 45px;
+    gap: 70px;
   }
 }
 
@@ -270,6 +300,7 @@
 
   @include m.desktop {
     @include m.list-reset;
+    padding-right: 50px;
   }
 }
 
@@ -282,16 +313,16 @@
   background-color: v.$dark;
   top: 8px;
   right: 5px;
-  box-shadow: 0 4px 0 0 v.$dark, 0 8px 0 0 v.$dark;
+  box-shadow: 0 6px 0 0 v.$dark, 0 12px 0 0 v.$dark;
 }
 
 .nav--opened .nav__toggle::after {
   position: absolute;
   display: block;
   content: "";
-  width: 20px;
+  width: 26px;
   height: 2px;
-  top: 12px;
+  top: 14px;
   right: 0;
   background-color: v.$dark;
   transform: rotate(-45deg);
@@ -301,9 +332,9 @@
   position: absolute;
   display: block;
   content: "";
-  width: 20px;
+  width: 26px;
   height: 2px;
-  top: 12px;
+  top: 14px;
   right: 0;
   background-color: v.$dark;
   transform: rotate(45deg);

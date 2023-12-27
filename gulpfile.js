@@ -116,6 +116,7 @@ const server = (done) => {
     notify: false,
     ui: false,
   });
+  gulp.watch("source/js/*.js", gulp.series(scripts, reload));
   done();
 }
 
@@ -129,7 +130,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('sourse/js/*.js', gulp.series(scripts));
+  gulp.watch('sourse/js/*.js', gulp.series(scripts, reload));
   gulp.watch('source/*.html', gulp.series(html,reload));
 }
 

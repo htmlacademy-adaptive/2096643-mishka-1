@@ -6,16 +6,19 @@
   padding-top: 74px;
   padding-bottom: 73px;
   text-align: center;
+  font-size: 27px;
 
   @include m.tablet {
     position: relative;
-    padding-top: 104px;
+    padding-top: 102px;
     padding-bottom: 72px;
+    font-size: 43px;
   }
 
   @include m.desktop {
     padding-top: 101px;
     padding-bottom: 95px;
+    font-size: 53px;
   }
 }
 

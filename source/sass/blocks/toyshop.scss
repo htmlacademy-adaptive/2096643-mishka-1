@@ -69,7 +69,8 @@
   flex-direction: column;
 
   @include m.tablet {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -113,7 +114,7 @@
 
 .toyshop__icon--room {
   position: absolute;
-  top: 23px;
+  top: 26px;
   right: 36px;
 }
 
@@ -128,8 +129,8 @@
 
 .toyshop__icon--toy {
   position: absolute;
-  top: 21px;
-  right: 27px;
+  top: 28px;
+  right: 34px;
 
   &:hover {
     opacity: 0.7
@@ -148,15 +149,16 @@
   color: v.$light;
   font-size: 19px;
   font-weight: 700;
-  padding-left: 36px;
+  padding-left: 32px;
   padding-top: 25px;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
   padding-right: 0;
   cursor: pointer;
 
   @include m.tablet {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 34px;
   }
 }
 

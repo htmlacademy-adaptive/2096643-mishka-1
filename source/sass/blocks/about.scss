@@ -19,7 +19,7 @@
   margin-bottom: 28px;
 
   @include m.tablet {
-    margin-bottom: 41px;
+    margin-bottom: 46px;
   }
 
   @include m.desktop {
@@ -32,15 +32,15 @@
   @include m.list-reset;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 32px;
   font-weight: 700;
 
 
   @include m.tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 70px;
-    row-gap: 60px;
+    column-gap: 0;
+    row-gap: 58px;
   }
 
   @include m.desktop {
@@ -66,10 +66,12 @@
 }
 
 .about__item--eco::before {
+  position: relative;
   display: block;
   content: "";
   width: 33px;
   height: 38px;
+  left: 8px;
   background-image: url("../img/eco-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 16px;
@@ -82,10 +84,12 @@
 }
 
 .about__item--handmade::before {
+  position: relative;
   display: block;
   content: "";
   width: 35px;
   height: 34px;
+  left: 4px;
   background-image: url("../img/handmade-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 17px;
@@ -98,10 +102,12 @@
 }
 
 .about__item--price::before {
+  position: relative;
   display: block;
   content: "";
   width: 47px;
   height: 27px;
+  top: -4px;
   background-image: url("../img/price-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 26px;
@@ -114,10 +120,12 @@
 }
 
 .about__item--support::before {
+  position: relative;
   display: block;
   content: "";
   width: 55px;
   height: 23px;
+  left: -4px;
   background-image: url("../img/support-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 26px;
@@ -130,10 +138,12 @@
 }
 
 .about__item--likes::before {
+  position: relative;
   display: block;
   content: "";
   width: 34px;
   height: 27px;
+  left: 8px;
   background-image: url("../img/likes-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 21px;
@@ -145,10 +155,12 @@
 }
 
 .about__item--pack::before{
+  position: relative;
   display: block;
   content: "";
   width: 33px;
   height: 32px;
+  left: 4px;
   background-image: url("../img/gift-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 20px;

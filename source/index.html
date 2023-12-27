@@ -28,8 +28,8 @@
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <ul class="nav__list site-nav ">
-        <li class="nav__item site-nav__item"><a class="nav__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="nav__item site-nav__item"><a class="nav__link" href="form.html">Вязание на заказ</a></li>
+        <li class="nav__item site-nav__item site-nav__item--catalog"><a class="nav__link" href="catalog.html">Каталог товаров</a></li>
+        <li class="nav__item site-nav__item site-nav__item--order"><a class="nav__link" href="form.html">Вязание на заказ</a></li>
       </ul>
       <ul class="nav__list user-nav ">
         <li class="nav__item user-nav__item"><button class="nav__button nav__button--search" type="button">
@@ -59,7 +59,7 @@
     <h1 class="visually-hidden">Интернет-магазин игрушек Мишка.</h1>
     <section class="toyshop">
       <h2 class="visually-hidden">Магазин игрушек ручной работы.</h2>
-      <p class="toyshop__title section-title section-title--mobile">Милые штуки ручной<br> работы для дома Мишка</p>
+      <p class="toyshop__title section-title section-title--mobile">Милые штуки ручной<br> работы для дома</p>
       <ul class="toyshop__list">
         <li class="toyshop__item">
           <a class="toyshop__link" href="#">Предметы <br>интерьера</a>
@@ -80,7 +80,7 @@
         <h2 class="featured__title section-title">Вязанные корзинки</h2>
         <p class="featured__subtitle">Товар недели</p>
       </div>
-      <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
+      <p class="featured__text">Экологически чистая пряжа, ручная&nbsp;работа. Доступны в шести расцветках и трёх
         размерах.</p>
       <ul class="featured__list">
         <li class="featured__item featured__item--name">Цвет:</li>
@@ -113,9 +113,9 @@
         <li class="about__item about__item--eco">Экологически чистые&nbsp;материалы</li>
         <li class="about__item about__item--price">Скандинавский стиль по&nbsp;российской цене</li>
         <li class="about__item about__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
-        <li class="about__item about__item--handmade">Связано вручную с&nbsp;любовью и умилением</li>
+        <li class="about__item about__item--handmade">Связано вручную<br>с любовью и умилением</li>
         <li class="about__item about__item--support">Поддержка&nbsp;отечественного производителя</li>
-        <li class="about__item about__item--pack">Поставляется в&nbsp;подарочной упаковке</li>
+        <li class="about__item about__item--pack">Поставляется<br>в подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews container">
@@ -153,18 +153,19 @@
           </blockquote>
         </li>
       </ul>
-      <div class="reviews__slider">
-        <button class="reviews__toggle reviews__toggle--prev" type="button">
+      <ul class="reviews__slider">
+        <li><button class="reviews__toggle reviews__toggle--prev" type="button">
           <svg width="50" height="26">
-            <use href="img/sprite.svg#arrow"></use>
+            <use href="img/sprite.svg#arrow-left"></use>
           </svg>
-        </button>
-        <button class="reviews__toggle reviews__toggle--next" type="button">
+        </button></li>
+        <li><button class="reviews__toggle reviews__toggle--next" type="button">
           <svg width="50" height="26">
-            <use href="img/sprite.svg#arrow"></use>
+            <use href="img/sprite.svg#arrow-right"></use>
           </svg>
-        </button>
-      </div>
+        </button></li>
+
+      </ul>
       <button class="reviews__button button" type="button">Написать</button>
     </section>
     <section class="contacts">
@@ -173,15 +174,11 @@
         <li class="contacts__item contacts__item--name">e-mail:</li>
         <li class="contacts__item contacts__item--value"><a class="contacts__link">info@mimimishkashop.ru</a></li>
         <li class="contacts__item contacts__item--name">адрес:</li>
-        <li class="contacts__item contacts__item--value">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д. 19/8, офис
+        <li class="contacts__item contacts__item--value">г. Санкт-Петербург<br> ул.Большая Конюшенная<br>д. 19/8, офис
           101
         </li>
       </ul>
       <div class="contacts__map" id="map">
-
-      <!-- <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728549!2d30.320472477865028!3d59.93871647491521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1699021113267!5m2!1sru!2sru"
-        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
       <button class="contacts__button button" type="button">Напишите нам</button>
     </section>
@@ -229,10 +226,10 @@
       <button class="button button--accent">Добавить</button>
     </div>
   </div>
-  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=<639d79a4-05a5-4a93-b5c8-0d749b9d99f4>"
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=639d79a4-05a5-4a93-b5c8-0d749b9d99f4"
     type="text/javascript" defer></script>
   <script src="./js/maps.js" defer></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js" defer></script>
 </body>
 
 </html>
