@@ -12,8 +12,8 @@ const map = () => {
                 draggable: false,
                 iconLayout: 'default#image',
                 iconImageHref: "./img/map-pin.svg",
-                iconImageSize: [46, 57],
-                iconImageOffset: [-26, -52]
+                iconImageSize: [67, 100],
+                iconImageOffset: [-30, -130]
             });
 
         for (var i = 0; i < coords.length; i++) {

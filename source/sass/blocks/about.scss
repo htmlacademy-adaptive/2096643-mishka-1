@@ -8,7 +8,7 @@
   }
 
   @include m.desktop {
-    margin-bottom: 90px;
+    margin-bottom: 88px;
   }
 }
 
@@ -44,7 +44,8 @@
   }
 
   @include m.desktop {
-    row-gap: 57px;
+    column-gap: 46px;
+    row-gap: 60px;
     max-width: 650px;
     margin-left: 175px;
   }
@@ -75,6 +76,13 @@
   background-image: url("../img/eco-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 16px;
+  @include m.tablet {
+    top: -4px;
+  }
+
+  @include m.desktop {
+    top: 0;
+  }
 }
 
 .about__item--handmade {
@@ -93,6 +101,9 @@
   background-image: url("../img/handmade-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 17px;
+  @include m.desktop {
+    top: 2px;
+  }
 }
 
 .about__item--price {
@@ -164,4 +175,7 @@
   background-image: url("../img/gift-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 20px;
+  @include m.tablet {
+    top: -2px;
+  }
 }

@@ -38,7 +38,7 @@
 .production__title {
   position: relative;
   width: min-content;
-  padding-left: 91px;
+  padding-left: 55px;
   padding-top: 21px;
   padding-right: 13px;
   padding-bottom: 26px;
@@ -68,8 +68,8 @@
   width: 32px;
   height: 22px;
   top: 35px;
-  left: 25px;
-  background-image: url("../img/icon/video-icon.svg");
+  left: -2px;
+  background-image: url("../img/video-icon.svg");
   background-repeat: no-repeat;
 
   @include m.tablet {
@@ -85,12 +85,12 @@
 .production__text {
   margin: 0;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 24px;
   color: v.$grey;
   padding-left: 34px;
   padding-right: 30px;
-  padding-top: 35px;
-  margin-bottom: 41px;
+  padding-top: 36px;
+  margin-bottom: 42px;
 
   @include m.tablet  {
     font-size: 15px;
@@ -167,7 +167,7 @@
 
 .production__button {
   align-self: center;
-  padding: 18px 11px;
+  padding: 14px 16px;
   margin-bottom: 33px;
 
   @include m.tablet  {

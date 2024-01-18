@@ -128,7 +128,7 @@
 
   @include m.tablet {
     display: flex;
-    gap: 40px;
+    gap: 36px;
     top: 90px;
     left: 50px;
     order: 2;
@@ -155,7 +155,9 @@
 }
 
 .site-nav__item--catalog {
+  @include m.desktop {
   border-right: 1px solid v.$dark10;
+  }
 
 }
 .site-nav__item--order {
@@ -181,7 +183,7 @@
   border: none;
   padding: 0;
   display: flex;
-  gap: 36px;
+  gap: 34px;
 
 }
 
@@ -209,20 +211,20 @@
 .nav__button--search {
   @include m.tablet {
     display: flex;
-    padding: 36px 32px 33px 34px;
+    padding: 34px 31px 36px 34px;
   }
 }
 
 .nav__button--box {
   @include m.tablet {
-    padding: 33px 0 30px 33px;
+    padding: 33px 0 30px 30px;
   }
 }
 
 .user-nav {
   position: absolute;
   margin-top: 1px;
-  top: 237px;
+  top: 236px;
   background-color: v.$light;
   width: 100%;
 
@@ -241,12 +243,14 @@
 }
 
 .user-nav__item {
+  padding-top: 29px;
+  padding-bottom: 27px;
+  padding-left: 32px;
   @include m.tablet {
     font-size: 17px;
     border-left: 1px solid v.$dark10;
   }
 }
-
 
 .nav__button-text--search {
   @include m.tablet {
@@ -273,12 +277,6 @@
     padding-left: 50px;
   }
 }
-
-// .sale-nav__item {
-//   @include m.desktop{
-//     padding-left: 50px;
-//   }
-// }
 .sale-nav__wrapper {
   display: none;
 

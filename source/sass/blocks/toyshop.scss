@@ -2,7 +2,7 @@
 @use "../base/mixin.scss" as m;
 
 .toyshop {
-  margin-bottom: 31px;
+  margin-bottom: 34px;
   background-color: v.$toyshop-bg;
   background-image: url("../img/toyshop-bgi.jpg");
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
     position: relative;
     background-size: auto 746px;
     background-position: 50% 0;
-    margin-bottom: 51px;
+    margin-bottom: 46px;
   }
 
   @include m.desktop {
@@ -41,7 +41,8 @@
   @include m.desktop {
     height: 34px;
     background-size: contain;
-    bottom: -20px;
+    bottom: -16px;
+    background-image: url("../img/zigzag-desktop.svg");
   }
 }
 
@@ -49,7 +50,7 @@
   padding-top: 73px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 121px;
   text-align: center;
 
   @include m.tablet {
@@ -114,8 +115,12 @@
 
 .toyshop__icon--room {
   position: absolute;
-  top: 26px;
+  top: 24px;
   right: 36px;
+
+  @include m.tablet {
+    top: 28px;
+  }
 }
 
 .toyshop__item:hover .toyshop__icon {
@@ -129,8 +134,13 @@
 
 .toyshop__icon--toy {
   position: absolute;
-  top: 28px;
-  right: 34px;
+  top: 22px;
+  right: 27px;
+
+  @include m.tablet {
+    top: 30px;
+    right: 34px;
+  }
 
   &:hover {
     opacity: 0.7
@@ -149,8 +159,8 @@
   color: v.$light;
   font-size: 19px;
   font-weight: 700;
-  padding-left: 32px;
-  padding-top: 25px;
+  padding-left: 30px;
+  padding-top: 24px;
   padding-bottom: 30px;
   padding-right: 0;
   cursor: pointer;
@@ -158,7 +168,8 @@
   @include m.tablet {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 34px;
+    padding-left: 36px;
+    padding-bottom: 34px;
   }
 }
 

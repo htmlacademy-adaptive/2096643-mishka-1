@@ -4,7 +4,8 @@
 .footer {
   background-color: v.$silver;
   @include m.tablet {
-    padding-top: 30px;
+    padding-top: 51px;
+    padding-bottom: 58px;
   }
 }
 

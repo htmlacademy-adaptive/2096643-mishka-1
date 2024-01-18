@@ -7,11 +7,12 @@
   gap: 26px;
   justify-content: center;
   padding-top: 25px;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   background-color: v.$silver;
   border-bottom: 1px solid v.$light-silver;
   @include m.tablet{
     border: none;
+    padding: 0;
   }
 }
 

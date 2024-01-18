@@ -1,4 +1,5 @@
 @use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
 
 .developed {
   display: flex;
@@ -7,7 +8,9 @@
   padding-top: 20px;
   padding-bottom: 31px;
   background-color: v.$silver;
-
+@include m.tablet {
+  padding: 0;
+}
 }
 
 .developed__text {

@@ -9,7 +9,8 @@
   align-self: center;
 
   @include m.tablet {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: max-content 1fr;
   }
 
   @include m.desktop {
@@ -42,7 +43,9 @@
   @include m.tablet {
     justify-content: space-between;
     flex-grow: 1;
+    padding-top: 30px;
     padding-left: 34px;
+    padding-right: 39px;
   }
 
   @include m.desktop {
