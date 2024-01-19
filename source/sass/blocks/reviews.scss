@@ -57,6 +57,7 @@
 
 .reviews__title {
   margin: 0;
+  margin-top: 2px;
 
   @include m.desktop {
     padding-left: 174px;
@@ -66,7 +67,7 @@
 
 .reviews__list {
   @include m.list-reset;
-  margin-top: -2px;
+  margin-top: -1px;
 
   @include m.tablet {
     order: 3;

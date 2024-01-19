@@ -247,6 +247,7 @@
   padding-bottom: 27px;
   padding-left: 32px;
   @include m.tablet {
+    padding: 0;
     font-size: 17px;
     border-left: 1px solid v.$dark10;
   }
