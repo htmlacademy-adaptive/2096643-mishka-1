@@ -2,8 +2,12 @@
 @use "../base/mixin.scss" as m;
 
 .control {
-  gap: 24px;
+  gap: 22px;
   align-items: center;
+
+  @include m.tablet {
+    gap: 29px;
+  }
 }
 
 .control__marker {
@@ -13,6 +17,7 @@
   border: 2px solid v.$grey;
   border-radius: 50%;
   background-color: transparent;
+  flex-shrink: 0;
 
   @include m.tablet {
     width: 52px;
@@ -69,7 +74,7 @@
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 23px 26px;
+  background-size: 25px 17px;
   @include m.tablet {
     background-size: 31px 22px;
   }
