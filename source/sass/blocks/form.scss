@@ -363,34 +363,35 @@
   position: absolute;
   color: v.$dark;
   opacity: 0.3;
-
-  @include m.tablet {
-    top: 8px;
-    right: 70px;
-  }
-
-  @include m.desktop {
-    left: 830px;
-  }
 }
 
 .form__icon--tel {
-  right: 40px;
-  top: 30px;
+  right: 37px;
+  top: -33px;
 
   @include m.tablet {
     right: 76px;
-    top: 11px;
+    top: -52px;
+  }
+
+  @include m.desktop {
+    right: 183px;
+    top: -52px;
   }
 }
 
 .form__icon--email {
-  right: 34px;
-  top: 36px;
+  right: 33px;
+  top: -29px;
 
   @include m.tablet {
     right: 72px;
-    top: 16px;
+    top: -50px;
+  }
+
+  @include m.desktop {
+  right: 179px;
+  top: -50px;
   }
 }
 

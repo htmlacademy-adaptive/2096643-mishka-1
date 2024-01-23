@@ -2,7 +2,7 @@
 @use "../base/mixin.scss" as m;
 
 .section-title {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
   line-height: 30px;
   margin: 0;
@@ -22,6 +22,6 @@
 
 .section-title--mobile {
   @include m.onli-mobile {
-    font-size: 27px;
+    font-size: 25px;
   }
 }

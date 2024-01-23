@@ -7,15 +7,18 @@
   border: 1px solid v.$light-grey;
   margin-bottom: 30px;
   align-self: center;
+  width: 100%;
 
   @include m.tablet {
     display: grid;
     grid-template-columns: max-content 1fr;
+    margin-bottom: 0;
   }
 
   @include m.desktop {
     align-self: stretch;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
   }
 }
 
@@ -38,14 +41,13 @@
 .card__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 26px;
+  padding:26px;
 
   @include m.tablet {
     justify-content: space-between;
-    flex-grow: 1;
-    padding-top: 30px;
-    padding-left: 34px;
-    padding-right: 39px;
+    padding-top: 26px;
+    padding-left: 32px;
+    padding-right: 30px;
   }
 
   @include m.desktop {
@@ -87,6 +89,10 @@
     font-size: 15px;
     padding-bottom: 0;
   }
+
+  @include m.desktop {
+    padding-bottom: 12px;
+  }
 }
 
 
@@ -95,7 +101,9 @@
   justify-content: space-between;
   padding-top: 22px;
   border-top: 1px solid v.$light-grey;
-
+  @include m.desktop {
+    padding-top: 24px;
+  }
 }
 
 .card__price {
@@ -112,6 +120,7 @@
   border: none;
   color: v.$dark;
   opacity: 0.2;
+  padding: 0;
 
   &:hover,
   &:focus {

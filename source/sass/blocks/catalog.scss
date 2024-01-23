@@ -6,7 +6,7 @@
     margin-bottom: 57px;
   }
   @include m.desktop {
-    margin-bottom: 105px;
+    margin-bottom: 48px;
   }
 }
 
@@ -57,14 +57,14 @@ text-align: center;
   gap: 0;
 
   @include m.tablet {
-    padding-top: 75px;
-    gap: 54px;
+    padding-top: 80px;
+    gap: 50px;
   }
 
   @include m.desktop {
-    padding-top: 120px;
+    padding-top: 128px;
     flex-direction: row;
-    gap: 52px;
+    gap: 48px;
   }
 }
 

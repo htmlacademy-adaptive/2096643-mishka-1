@@ -43,6 +43,7 @@
     background-size: contain;
     bottom: -16px;
     background-image: url("../img/zigzag-desktop.svg");
+    background-position: center;
   }
 }
 
@@ -88,7 +89,8 @@
   position: relative;
   flex-grow: 1;
   background-color: v.$accent;
-  transition: margin 0.3s;
+  transform: translateY(-5px);
+  transition: transform 0.3s;
 
   &:hover {
     background-color: v.$accent-medium;

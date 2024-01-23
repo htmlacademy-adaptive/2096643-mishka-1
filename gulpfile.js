@@ -78,7 +78,13 @@ const optimizeSVG = () =>{
 
 const createSprite = ()=>{
   return gulp.src('source/img/icon/*.svg')
-  .pipe(svgo())
+  .pipe(svgo({
+    plugins: [
+      {
+        removeViewBox: false,
+      },
+    ],
+  }))
   .pipe(svgstore({
     inlineSvg:true
   }))

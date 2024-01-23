@@ -15,6 +15,7 @@
 
 <body class="page-body">
   <header class="main-header">
+    <div class="main-header__wrapper">
     <nav class="nav nav--closed nav--nojs">
       <div class="nav__logo-container">
         <a class="nav__logo" href="index.html">
@@ -53,6 +54,7 @@
         <li class="nav__item sale-nav__item sale-nav__text-block">Бесплатная доставка по России</li>
       </ul>
     </nav>
+  </div>
   </header>
   <main class="page-form">
     <h1 class="page-form__title section-title">Вязание на заказ</h1>
@@ -63,20 +65,20 @@
         <fieldset class="form__section form__section--type container">
           <h3 class="form__title form__title--type">Тип</h3>
           <ul class="form__list form__list--type">
-            <li class="form__item"><label class="form__subtitle form__subtitle--type control"><input class="control__input visually-hidden" type="radio" checked><span class="control__marker"></span>Аксессуар для интерьера</label></li>
-            <li class="form__item"><label class="form__subtitle form__subtitle--type control"><input class="control__input visually-hidden" type="radio"><span class="control__marker"></span>Детская игрушка</label></li>
+            <li class="form__item"><label class="form__subtitle form__subtitle--type control"><input class="control__input visually-hidden" type="radio"  name="type" checked><span class="control__marker"></span>Аксессуар для интерьера</label></li>
+            <li class="form__item"><label class="form__subtitle form__subtitle--type control"><input class="control__input visually-hidden" type="radio" name="type"><span class="control__marker"></span>Детская игрушка</label></li>
           </ul>
         </fieldset>
         <div class="form__section-wrapper">
         <fieldset class="form__section form__section--color container">
           <h3 class="form__title form__title--color">Цвет</h3>
           <ul class="form__list form__list--color">
-            <li class="form__item "><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" checked><span class="control__marker control__marker--checkbox"></span>Белый</label></li>
-            <li class="form__item "><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" checked><span class="control__marker control__marker--checkbox"></span>Серый</label></li>
-            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox"><span class="control__marker control__marker--checkbox"></span>Тиффани</label></li>
-            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox"><span class="control__marker control__marker--checkbox"></span>Черный</label></li>
-            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox"><span class="control__marker control__marker--checkbox"></span>Розовый</label></li>
-            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox"><span class="control__marker control__marker--checkbox"></span>Оранжевый</label></li>
+            <li class="form__item "><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" name="white"><span class="control__marker control__marker--checkbox"></span>Белый</label></li>
+            <li class="form__item "><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" name="grey" checked><span class="control__marker control__marker--checkbox"></span>Серый</label></li>
+            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" name="tiffany"><span class="control__marker control__marker--checkbox"></span>Тиффани</label></li>
+            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" name="black"><span class="control__marker control__marker--checkbox"></span>Черный</label></li>
+            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" name="pink"><span class="control__marker control__marker--checkbox"></span>Розовый</label></li>
+            <li class="form__item"><label class="form__subtitle control"><input  class="control__input visually-hidden" type="checkbox" name="orange"><span class="control__marker control__marker--checkbox"></span>Оранжевый</label></li>
           </ul>
         </fieldset>
       </div>
@@ -84,24 +86,24 @@
           <h3 class="form__title form__title--name">ФИО</h3>
           <ul class="form__list form__list--name">
             <li><label class="form__subtitle form__subtitle-name-wrapper">Имя:<input class="form__input"
-                  type="text" placeholder="Введите ваше имя*"></label></li>
+                  type="text"  name="name" placeholder="Введите ваше имя*"></label></li>
             <li><label class="form__subtitle form__subtitle-name-wrapper">Фамилия:<input class="form__input"
-                  type="text" placeholder="Укажите фамилию*"></label></li>
+                  type="text"  name="surname" placeholder="Укажите фамилию*"></label></li>
             <li><label class="form__subtitle form__subtitle-name-wrapper">Отчество:<input class="form__input"
-                  type="text" placeholder="Отчество, если желаете"></label></li>
+                  type="text"  name="pathername" placeholder="Отчество, если желаете"></label></li>
           </ul>
         </fieldset>
         <div class="form__section-wrapper form__contacts-wrapper">
         <fieldset class="form__section form__section--contacts container">
           <h3 class="form__title form__title--contacts">Тел</h3>
-          <input class="form__input form__input-contacts" type="tel" placeholder="+7 XXX XXX XX XX*">
+          <input class="form__input form__input-contacts" type="tel"  name="tel" placeholder="+7 XXX XXX XX XX*">
           <svg class="form__icon form__icon--tel" width="25" higth="24">
             <use href="img/sprite.svg#tel"></use>
           </svg>
         </fieldset>
         <fieldset class="form__section form__section--contacts container">
           <h3 class="form__title form__title--contacts">e-mail</h3>
-          <input class="form__input form__input-contacts" type="email" placeholder="Ваш Email*">
+          <input class="form__input form__input-contacts" type="email"  name="email" placeholder="Ваш Email*">
           <svg class="form__icon form__icon--email" width="32" higth="22">
             <use href="img/sprite.svg#email"></use>
           </svg>
