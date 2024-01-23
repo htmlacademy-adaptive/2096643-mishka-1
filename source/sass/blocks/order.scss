@@ -12,17 +12,24 @@
   color: v.$grey;
   margin-top: 17px;
   margin-bottom: 29px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @include m.tablet {
     font-size: 17px;
     line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 66px;
     margin-bottom: 81px;
   }
 
   @include m.desktop {
+    max-width: 1150px;
     margin-top: 115px;
-    padding-left: 225px;
-    padding-right: 225px;
+    padding-left: 224px;
+    padding-right: 255px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

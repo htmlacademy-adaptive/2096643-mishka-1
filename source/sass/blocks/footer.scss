@@ -1,13 +1,18 @@
 @use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
 
 .footer {
   background-color: v.$silver;
+  @include m.tablet {
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
 }
 
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  @media (min-width: v.$tablet-width) {
+  @include m.tablet {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +22,7 @@
 .footer__logo {
   display: none;
   color: v.$dark;
-  @media (min-width: v.$tablet-width) {
+  @include m.tablet {
     display: block;
   }
 

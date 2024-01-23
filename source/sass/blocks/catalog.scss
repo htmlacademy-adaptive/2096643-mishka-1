@@ -2,13 +2,11 @@
 @use "../base/mixin.scss" as m;
 
 .catalog {
-  margin-bottom: 30px;
-
   @include m.desktop {
     margin-bottom: 57px;
   }
   @include m.desktop {
-    margin-bottom: 105px;
+    margin-bottom: 48px;
   }
 }
 
@@ -56,17 +54,17 @@ text-align: center;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 0;
 
   @include m.tablet {
-    padding-top: 60px;
-    gap: 54px;
+    padding-top: 80px;
+    gap: 50px;
   }
 
   @include m.desktop {
-    padding-top: 120px;
+    padding-top: 128px;
     flex-direction: row;
-    gap: 52px;
+    gap: 48px;
   }
 }
 

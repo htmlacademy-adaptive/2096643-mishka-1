@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 89px;
+    margin-bottom: 44px;
 
     @include m.tablet {
     position: relative;
@@ -17,15 +17,18 @@
     padding-bottom: 47px;
     background-image: url("../img/reviews-bgi.png");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
 
     @media (min-resolution:2dppx){
       background-image: url("../img/reviews-bgi@2x.png");
-      background-size: 350px auto;
+      background-size: 350px 457px;
     }
   }
 
   @include m.desktop {
-    margin-bottom: 161px;
+    margin-bottom: 167px;
+    padding-top: 82px;
+    padding-bottom: 90px;
   }
 }
 
@@ -35,7 +38,7 @@
   content: "";
   width: 100%;
   height: 6px;
-  bottom: -45px;
+  bottom: -4px;
   left: 0;
   background-image: url("../img/zigzag-line.svg");
   background-repeat: repeat-x;
@@ -43,29 +46,29 @@
 
   @include m.tablet {
     height: 17px;
-    bottom: -68px;
+    bottom: -90px;
   }
 
   @include m.desktop {
-    height: 23px;
-    bottom: -67px;
+    height: 17px;
+    bottom: -92px;
   }
 }
 
 .reviews__title {
-  margin-bottom: 14px;
+  margin: 0;
+  margin-top: 2px;
 
-  @include m.tablet {
-    margin-bottom: 0;
-  }
   @include m.desktop {
-    margin-bottom: 35px;
     padding-left: 174px;
+    margin-top: -2px;
   }
 }
 
 .reviews__list {
   @include m.list-reset;
+  margin-top: -1px;
+
   @include m.tablet {
     order: 3;
   }
@@ -88,6 +91,10 @@
     font-size: 17px;
     margin-bottom: 61px;
   }
+
+  @include m.desktop {
+    margin-bottom: 46px;
+  }
 }
 
 .reviews__item--active {
@@ -100,11 +107,16 @@
   @include m.tablet {
     margin-top: 38px;
   }
+
+  @include m.desktop {
+    margin-top: 36px;
+  }
 }
 
 .reviews__autor-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 6px;
     margin-bottom: 30px;
     @include m.tablet {
       margin-bottom:0;
@@ -119,16 +131,19 @@
   @include m.tablet {
     font-size: 18px;
   }
+
+  @include m.desktop {
+    font-size: 17px;
+  }
 }
 
 .reviews__autor-nickname {
   font-size: 17px;
-  @include m.tablet {
-    font-size: 18px;
-  }
+  color: v.$grey;
 }
 
 .reviews__slider {
+  @include m.list-reset;
   display: flex;
   align-self: center;
   @include m.tablet {
@@ -137,15 +152,21 @@
     bottom: 45px;
     right: 50px;
   }
+
+  @include m.desktop {
+    bottom: 96px;
+    right: -2px;
+  }
 }
 
 .reviews__toggle {
   background-color: transparent;
   border: 1px solid v.$light-grey;
-  padding: 13px 42px 13px 38px;
+  padding: 12px 42px 13px 36px;
 
   @include m.tablet {
     border: none;
+    padding: 10px 20px 9px 18px;
   }
   &:hover {
     opacity: 0.6;
@@ -157,25 +178,26 @@
   }
 }
 
-.reviews__toggle--prev {
-  transform: rotate(180deg);
-}
 
 .reviews__button {
   padding-left: 65px;
   padding-right: 65px;
-  margin-top: 38px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-top: 36px;
   margin-bottom: 45px;
 
   @include m.tablet {
     align-self: center;
     order: 2;
     margin: 0;
-    padding-left: 26px;
-    padding-right: 26px;
+    margin-top: -8px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 
   @include m.desktop {
     align-self: self-start;
+    margin-top: -2px;
   }
 }

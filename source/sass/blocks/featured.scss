@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 76px;
+  margin-bottom: 38px;
 
   @include m.tablet {
     display: grid;
@@ -16,6 +16,7 @@
 
   @include m.desktop {
     grid-template-columns: 1fr 525px;
+    grid-template-rows: repeat(3, min-content);
     column-gap: 59px;
     margin-bottom: 164px;
   }
@@ -28,47 +29,55 @@
   content: "";
   width: 100%;
   height: 6px;
-  bottom: -36px;
+  bottom: -7px;
   left: 0;
   background-image: url("../img/zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: contain;
 
   @include m.tablet {
-    height: 17px;
-    bottom: -52px;
+    height: 18px;
+    bottom: -70px;
   }
 
   @include m.desktop {
-    height: 23px;
-    bottom: -73px;
+    height: 22px;
+    bottom: -100px;
   }
 }
 
 .featured__title-wrapper {
-
   @include m.tablet {
     display: flex;
     justify-content: space-between;
     grid-column: 1/-1;
     grid-row: 1/2;
     margin-bottom: 37px;
+    margin-top: 6px;
   }
 
   @include m.desktop {
     flex-direction: row-reverse;
-    gap: 43px;
+    gap: 56px;
     width: max-content;
-    padding-left: 32px;
     align-items: center;
     grid-column: 1/-1;
-    margin-top: 64px;
-    margin-bottom: 35px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 46px;
   }
 }
 
 .featured__title {
   margin-bottom: 3px;
+  @include m.tablet {
+    margin-bottom: 0;
+  }
+
+  @include m.desktop {
+    margin-top: 16px;
+    margin-bottom: 15px;
+  }
 }
 
 .featured__subtitle {
@@ -82,15 +91,19 @@
     width: min-content;
     line-height: 17px;
     text-align: center;
+    margin-right: 26px;
+    margin-top: 6px;
+  }
+
+  @include m.desktop {
+    margin: 0;
   }
 }
 
 .featured__text {
   font-size: 15px;
   line-height: 24px;
-  margin: 0;
-  margin-top: 17px;
-  margin-bottom: 28px;
+  margin: 18px 0;
   color: v.$grey;
 
   @include m.tablet {
@@ -108,7 +121,7 @@
     max-width: 292px;
     margin: 0;
     margin-left: auto;
-    margin-bottom: 60px;
+    margin-top: -7px;
   }
 }
 
@@ -129,14 +142,16 @@
   }
   @include m.desktop {
     max-width: 292px;
+    margin: 0;
     margin-left: auto;
-    margin-right: 0;
+    margin-top: -7px;
+    grid-auto-rows: min-content;
   }
 }
 
 .featured__item {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid v.$light-grey;
 }
 
@@ -148,7 +163,6 @@
   width: 260px;
   height: 315px;
   margin: 25px auto;
-  background-color: v.$light-grey;//пока нет изображения
 
   @include m.tablet {
     align-self:end;
@@ -178,17 +192,21 @@
     gap: 33px;
     grid-column: 1/2;
     margin-bottom: 0;
+    margin-top: 3px;
+    margin-left: -4px;
   }
 
   @include m.desktop {
-    max-width: 292px;
+    width: 292px;
     margin-left: auto;
+    margin-top: auto;
   }
 }
 
 .featured__price {
   font-weight: 700;
   text-align: center;
+  padding-top: 2px;
 
   @include m.tablet {
     font-size: 20px;
@@ -196,11 +214,9 @@
 }
 
 .featured__button {
-  padding-left: 70px;
-  padding-right: 70px;
+  width: 100%;
   align-self: center;
   @include m.tablet {
-    padding-left: 86px;
-    padding-right: 86px;
+    margin-left: 5px;
   }
 }

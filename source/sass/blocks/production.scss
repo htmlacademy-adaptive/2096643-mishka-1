@@ -12,12 +12,17 @@
   @include m.tablet {
     margin-left: 50px;
     margin-right: 50px;
+    padding-top: 5px;
+    margin-top: 48px;
+    margin-bottom: 63px;
   }
 
   @include m.desktop {
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 104px;
+    padding-left: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content max-content max-content;
@@ -38,9 +43,9 @@
 .production__title {
   position: relative;
   width: min-content;
-  padding-left: 91px;
-  padding-top: 21px;
-  padding-right: 13px;
+  padding-left: 55px;
+  padding-top: 24px;
+  padding-right: 10px;
   padding-bottom: 26px;
   margin: 0;
   margin-left: auto;
@@ -50,6 +55,7 @@
     font-size: 20px;
     padding-left: 107px;
     padding-top: 41px;
+    margin: 0;
     width: auto;
     order: 2;
   }
@@ -58,6 +64,8 @@
     padding-left: 0;
     padding-top: 96px;
     grid-column: 2/-1;
+    width: min-content;
+    padding-bottom: 0;
   }
 }
 
@@ -67,42 +75,44 @@
   content: "";
   width: 32px;
   height: 22px;
-  top: 35px;
-  left: 25px;
-  background-image: url("../img/icon/video-icon.svg");
+  top: 37px;
+  left: 0px;
+  background-image: url("../img/video-icon.svg");
   background-repeat: no-repeat;
 
   @include m.tablet {
-    top: 40px;
-    left: -110px;
+    top: 38px;
+    left: 41px;
   }
 
   @include m.desktop {
-    top: 50px;
+    top: 47px;
     left: 0;
   }
 }
 .production__text {
   margin: 0;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 24px;
   color: v.$grey;
   padding-left: 34px;
   padding-right: 30px;
-  padding-top: 35px;
-  margin-bottom: 41px;
+  padding-top: 36px;
+  margin-bottom: 42px;
 
   @include m.tablet  {
     font-size: 15px;
     padding-left: 40px;
-    padding-right: 17px;
+    padding-right: 34px;
     order: 3;
+    padding-top: 0;
+    line-height: 30px;
   }
 
   @include m.desktop {
     padding-left: 0;
     padding-right: 66px;
-    padding-top: 27px;
+    padding-top: 22px;
     grid-column: 2/-1;
   }
 }
@@ -134,7 +144,7 @@
   width: 100px;
   height: 76px;
   top: 25%;
-  right: 30%;
+  right: 31%;
   background-image: url("../img/play.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,10 +155,17 @@
 
 
   @include m.tablet {
-    width: 102px;
-    height: 77px;
-    top: 43%;
-    right: 43%;
+    width: 104px;
+    height: 80px;
+    top: 41%;
+    right: 42%;
+  }
+
+  @include m.desktop {
+    width: 100px;
+    height: 74px;
+    top: 42%;
+    right: 42%;
   }
 
   &:hover,
@@ -167,7 +184,7 @@
 
 .production__button {
   align-self: center;
-  padding: 18px 11px;
+  padding: 14px 16px;
   margin-bottom: 33px;
 
   @include m.tablet  {
@@ -175,12 +192,13 @@
     align-self: auto;
     margin-right: 42px;
     margin-left: 42px;
+    margin-bottom: 42px;
   }
 
   @include m.desktop {
     align-self:center;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 42px;
+    padding-right: 42px;
     margin: 0;
     margin-right: auto;
     margin-bottom: 60px;

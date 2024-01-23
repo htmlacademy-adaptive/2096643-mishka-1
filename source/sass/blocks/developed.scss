@@ -1,13 +1,17 @@
 @use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
 
 .developed {
   display: flex;
   gap: 27px;
   justify-content: center;
-  padding-top: 29px;
+  padding-top: 20px;
   padding-bottom: 31px;
   background-color: v.$silver;
-
+@include m.tablet {
+  padding: 0;
+  margin-top: -9px;
+}
 }
 
 .developed__text {
