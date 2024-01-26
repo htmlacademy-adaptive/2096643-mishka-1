@@ -120,22 +120,31 @@
 .production__video {
   position: relative;
   width: 260px;
-  height: 150px;
+  min-height: 150px;
+  height: auto;
   background-color: v.$silver;
   margin: 0 auto;
   padding: 0;
 
   @include m.tablet  {
     width: 668px;
-    height: 455px;
+    min-height: 455px;
     order: 1;
   }
 
   @include m.desktop {
     width: 682px;
-    height: 455px;
+    min-height: 455px;
     grid-row: 1/-1;
   }
+}
+
+.production__video-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .production__video-button{
