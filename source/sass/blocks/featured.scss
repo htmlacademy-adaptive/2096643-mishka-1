@@ -5,7 +5,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   @include m.tablet {
     display: grid;
@@ -96,7 +96,8 @@
   }
 
   @include m.desktop {
-    margin: 0;
+    margin-right: 0;
+    margin-top: -9px;
   }
 }
 
@@ -143,8 +144,8 @@
   @include m.desktop {
     max-width: 292px;
     margin: 0;
+    margin-top: -9px;
     margin-left: auto;
-    margin-top: -7px;
     grid-auto-rows: min-content;
   }
 }
@@ -211,6 +212,10 @@
   @include m.tablet {
     font-size: 20px;
   }
+
+  @include m.desktop {
+    padding: 0;
+  }
 }
 
 .featured__button {
@@ -218,5 +223,10 @@
   align-self: center;
   @include m.tablet {
     margin-left: 5px;
+  }
+
+  @include m.desktop {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }

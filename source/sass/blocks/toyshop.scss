@@ -2,7 +2,7 @@
 @use "../base/mixin.scss" as m;
 
 .toyshop {
-  margin-bottom: 34px;
+  margin-bottom: 28px;
   background-color: v.$toyshop-bg;
   background-image: url("../img/toyshop-bgi.jpg");
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   }
 
   @include m.desktop {
-    margin-bottom: 71px;
+    margin-bottom: 66px;
   }
 }
 
@@ -41,7 +41,7 @@
   @include m.desktop {
     height: 34px;
     background-size: contain;
-    bottom: -16px;
+    bottom: -14px;
     background-image: url("../img/zigzag-desktop.svg");
     background-position: center;
   }
@@ -51,17 +51,17 @@
   padding-top: 73px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 121px;
+  padding-bottom: 126px;
   text-align: center;
 
   @include m.tablet {
     padding-top: 154px;
-    padding-bottom: 372px;
+    padding-bottom: 376px;
   }
 
   @include m.desktop {
     padding-top: 157px;
-    padding-bottom: 355px;
+    padding-bottom: 360px;
   }
 }
 
@@ -121,7 +121,7 @@
   right: 36px;
 
   @include m.tablet {
-    top: 28px;
+    top: 30px;
   }
 }
 
@@ -140,7 +140,7 @@
   right: 27px;
 
   @include m.tablet {
-    top: 30px;
+    top: 32px;
     right: 34px;
   }
 
@@ -171,7 +171,13 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 36px;
-    padding-bottom: 34px;
+    padding-bottom: 28px;
+    padding-top: 26px;
+  }
+
+  @include m.desktop {
+    padding-bottom: 30px;
+    padding-top: 26px;
   }
 }
 

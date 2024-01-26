@@ -75,13 +75,15 @@
   left: 8px;
   background-image: url("../img/eco-icon.svg");
   background-repeat: no-repeat;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   @include m.tablet {
     top: -4px;
+    margin-bottom: 14px;
   }
 
   @include m.desktop {
     top: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -101,8 +103,12 @@
   background-image: url("../img/handmade-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 17px;
+  @include m.tablet {
+    margin-bottom: 18px;
+  }
   @include m.desktop {
-    top: 2px;
+    top: 6px;
+    margin-bottom: 25px;
   }
 }
 
@@ -121,7 +127,13 @@
   top: -4px;
   background-image: url("../img/price-icon.svg");
   background-repeat: no-repeat;
+  margin-bottom: 22px;
+  @include m.tablet{
   margin-bottom: 26px;
+}
+@include m.desktop {
+  margin-bottom: 24px;
+}
 }
 
 .about__item--support {
@@ -140,6 +152,12 @@
   background-image: url("../img/support-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 26px;
+  @include m.tablet {
+    margin-bottom: 30px;
+  }
+  @include m.desktop {
+    margin-bottom: 28px;
+  }
 }
 
 .about__item--likes{
@@ -157,8 +175,12 @@
   left: 8px;
   background-image: url("../img/likes-icon.svg");
   background-repeat: no-repeat;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
+  @include m.tablet {
+    margin-bottom: 24px;
+  }
 }
+
 .about__item--pack {
   @include m.tablet {
     order: 6;
@@ -174,8 +196,13 @@
   left: 4px;
   background-image: url("../img/gift-icon.svg");
   background-repeat: no-repeat;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   @include m.tablet {
     top: -2px;
+    margin-bottom: 20px;
+  }
+
+  @include m.desktop {
+    margin-bottom: 19px;
   }
 }
