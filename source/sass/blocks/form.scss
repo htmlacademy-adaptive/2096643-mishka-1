@@ -342,6 +342,7 @@
 }
 
 .form__button {
+  font-family: inherit;
   font-size: 17px;
   line-height: 16px;
   @include m.tablet {

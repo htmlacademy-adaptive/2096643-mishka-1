@@ -9,6 +9,12 @@
   align-self: center;
   width: 100%;
 
+  @include m.onli-mobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
   @include m.tablet {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -121,6 +127,10 @@
   color: v.$dark;
   opacity: 0.2;
   padding: 0;
+
+  @include m.desktop {
+    padding-right: 5px;
+  }
 
   &:hover,
   &:focus {

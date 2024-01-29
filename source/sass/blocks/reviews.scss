@@ -15,12 +15,12 @@
     margin-bottom: 153px;
     padding-top: 82px;
     padding-bottom: 47px;
-    background-image: url("../img/reviews-bgi.png");
+    background-image: url("../img/reviews-bgi.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
 
     @media (min-resolution:2dppx){
-      background-image: url("../img/reviews-bgi@2x.png");
+      background-image: url("../img/reviews-bgi@2x.jpg");
       background-size: 350px 457px;
     }
   }
@@ -186,6 +186,7 @@
   padding-bottom: 14px;
   margin-top: 36px;
   margin-bottom: 45px;
+  text-decoration: none;
 
   @include m.tablet {
     align-self: center;

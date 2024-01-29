@@ -12,7 +12,6 @@
   @include m.tablet {
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 5px;
     margin-top: 48px;
     margin-bottom: 63px;
   }
@@ -195,6 +194,8 @@
   align-self: center;
   padding: 14px 16px;
   margin-bottom: 33px;
+  text-decoration: none;
+
 
   @include m.tablet  {
     order: 4;

@@ -1,0 +1,46 @@
+@use "../base/variables.scss" as v;
+@use "../base/mixin.scss" as m;
+
+.sale-nav {
+  display: none;
+
+  @include m.tablet {
+    position: absolute;
+    display: flex;
+    right: 50px;
+    top: 92px;
+    padding-top: 18px;
+  }
+
+  @include m.desktop {
+    width: 100%;
+    justify-content: space-between;
+    top: 90px;
+    left: 0;
+    padding-left: 50px;
+  }
+}
+.sale-nav__wrapper {
+  display: none;
+
+  @include m.desktop {
+    @include m.list-reset;
+    display: flex;
+    gap: 63px;
+  }
+}
+
+.sale-nav__text-block {
+  display: none;
+  font-weight: 400;
+  color: v.$grey;
+
+  @include m.tablet {
+    display: flex;
+  }
+
+  @include m.desktop {
+    @include m.list-reset;
+    padding-right: 50px;
+  }
+}

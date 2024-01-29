@@ -14,7 +14,7 @@ navToggle.addEventListener('click', function () {
 });
 
 let modalWindow = document.querySelector('.modal');
-let modalToggle = document.querySelector('.featured__button');
+let modalToggle = document.querySelector('.button[data-modal="open"]');
 
 function openModal(modal) {
   modal.classList.add('modal--opened');
@@ -32,4 +32,3 @@ modalWindow.addEventListener('click', function(e) {
     closeModal(modalWindow)
   }
 })
-

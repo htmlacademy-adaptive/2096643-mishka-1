@@ -6,7 +6,7 @@
     margin-bottom: 57px;
   }
   @include m.desktop {
-    margin-bottom: 48px;
+    margin-bottom: 53px;
   }
 }
 
@@ -43,9 +43,9 @@ text-align: center;
   }
 
   @include m.desktop {
-    height: 34px;
-    background-size: contain;
-    bottom: -20px;
+    height: 32px;
+    background-size: cover;
+    bottom: -15px;
   }
 }
 
@@ -67,5 +67,3 @@ text-align: center;
     gap: 48px;
   }
 }
-
-

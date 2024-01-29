@@ -221,6 +221,7 @@
 .featured__button {
   width: 100%;
   align-self: center;
+  text-decoration: none;
   @include m.tablet {
     margin-left: 5px;
   }
