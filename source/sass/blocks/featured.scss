@@ -22,8 +22,7 @@
   }
 }
 
-
-.featured::after{
+.featured::after {
   position: absolute;
   display: block;
   content: "";
@@ -70,6 +69,7 @@
 
 .featured__title {
   margin-bottom: 3px;
+
   @include m.tablet {
     margin-bottom: 0;
   }
@@ -141,6 +141,7 @@
     grid-column: 1/2;
     margin-bottom: 55px;
   }
+
   @include m.desktop {
     max-width: 292px;
     margin: 0;
@@ -166,7 +167,7 @@
   margin: 25px auto;
 
   @include m.tablet {
-    align-self:end;
+    align-self: end;
     justify-self: right;
     width: 334px;
     height: 404px;
@@ -179,7 +180,7 @@
   @include m.desktop {
     width: 525px;
     height: 636px;
-    grid-row:1/5;
+    grid-row: 1/5;
   }
 }
 
@@ -222,6 +223,7 @@
   width: 100%;
   align-self: center;
   text-decoration: none;
+
   @include m.tablet {
     margin-left: 5px;
   }

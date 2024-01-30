@@ -41,10 +41,10 @@
 
 .site-nav__item--catalog {
   @include m.desktop {
-  border-right: 1px solid v.$dark10;
+    border-right: 1px solid v.$dark10;
   }
-
 }
+
 .site-nav__item--order {
   @include m.desktop {
     padding-left: 12px;

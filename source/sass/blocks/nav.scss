@@ -126,7 +126,6 @@
   @include m.tablet {
     padding: 0;
   }
-
 }
 
 .nav__button {
@@ -140,8 +139,9 @@
   color: inherit;
 }
 
-.nav__button-text  {
+.nav__button-text {
   margin-left: -10px;
+
   @include m.tablet {
     margin-left: 0;
   }
@@ -173,14 +173,11 @@
   }
 }
 
-
-
 .nav__button-text--search {
   @include m.tablet {
     display: none;
   }
 }
-
 
 .nav--closed .nav__toggle::before {
   position: absolute;

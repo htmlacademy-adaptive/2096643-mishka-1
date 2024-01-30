@@ -47,7 +47,7 @@
 .card__wrapper {
   display: flex;
   flex-direction: column;
-  padding:26px;
+  padding: 26px;
 
   @include m.tablet {
     justify-content: space-between;
@@ -91,6 +91,7 @@
   line-height: 30px;
   color: v.$grey;
   padding-bottom: 17px;
+
   @include m.tablet {
     font-size: 15px;
     padding-bottom: 0;
@@ -107,6 +108,7 @@
   justify-content: space-between;
   padding-top: 22px;
   border-top: 1px solid v.$light-grey;
+
   @include m.desktop {
     padding-top: 24px;
   }
@@ -116,6 +118,7 @@
   font-size: 15px;
   font-weight: 700;
   color: v.$dark;
+
   @include m.tablet {
     font-size: 17px;
   }

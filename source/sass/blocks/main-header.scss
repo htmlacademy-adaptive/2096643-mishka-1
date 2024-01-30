@@ -3,5 +3,6 @@
 
 .main-header__wrapper {
   @include m.tablet {
-    border-bottom: 1px solid v.$dark10}
+    border-bottom: 1px solid v.$dark10;
+  }
 }

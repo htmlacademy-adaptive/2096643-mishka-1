@@ -8,10 +8,11 @@
   padding-top: 20px;
   padding-bottom: 31px;
   background-color: v.$silver;
-@include m.tablet {
-  padding: 0;
-  margin-top: -9px;
-}
+
+  @include m.tablet {
+    padding: 0;
+    margin-top: -9px;
+  }
 }
 
 .developed__text {

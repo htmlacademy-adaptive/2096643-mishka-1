@@ -15,7 +15,7 @@
   display: block;
 }
 
-.modal__container{
+.modal__container {
   position: relative;
   top: 50%;
   display: flex;
@@ -27,6 +27,7 @@
   padding: 28px 30px 46px 30px;
   margin: auto;
   width: 100%;
+
   @include m.tablet {
     padding-top: 38px;
     padding-left: 105px;
@@ -38,9 +39,9 @@
   @include m.desktop {
     padding-left: 108px;
     padding-right: 108px;
-
   }
 }
+
 .modal__title {
   margin: 0;
   font-size: 25px;
@@ -49,6 +50,7 @@
   color: v.$dark;
   text-transform: uppercase;
   margin-bottom: 14px;
+
   @include m.tablet {
     font-size: 30px;
     margin-bottom: 11px;
@@ -63,6 +65,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 21px;
+
   @include m.tablet {
     font-size: 17px;
     margin-bottom: 19px;

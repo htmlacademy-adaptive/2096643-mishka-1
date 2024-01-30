@@ -3,6 +3,7 @@
 
 .form {
   margin-bottom: 57px;
+
   @include m.tablet {
     margin-bottom: 50px;
   }
@@ -19,7 +20,6 @@
     display: grid;
     grid-template-columns: 167px 1fr;
   }
-
 }
 
 .form__section--type {
@@ -61,7 +61,7 @@
     padding-bottom: 52px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 48px
+    margin-bottom: 48px;
   }
 }
 
@@ -111,6 +111,7 @@
 
 .form__title--color {
   margin-bottom: 24px;
+
   @include m.tablet {
     margin-bottom: 0;
     margin-top: 18px;
@@ -217,7 +218,7 @@
   flex-grow: 1;
   padding-top: 16px;
   padding-bottom: 16px;
-  border: none;;
+  border: none;
   box-shadow: 0 -2px 0 0 v.$dark inset;
   background-color: transparent;
 
@@ -245,13 +246,14 @@
   }
 
   @include m.desktop {
-    max-width: 700px
+    max-width: 700px;
   }
 }
 
 .form__input-contacts::placeholder {
   font-size: 17px;
   line-height: 18px;
+
   @include m.tablet {
     padding-left: 22px;
   }
@@ -291,11 +293,20 @@
 .form__input--additional {
   border: 2px solid v.$grey;
   padding-top: 17px;
+  margin-top: 22px;
+  box-shadow: none;
 
   @include m.tablet {
     padding-left: 0;
     padding-top: 15px;
+    margin: 0;
+    margin-top: -20px;
   }
+
+  @include m.desktop {
+    max-width: 700px;
+  }
+
   &:hover {
     border-color: v.$accent-extradark;
     box-shadow: none;
@@ -305,21 +316,6 @@
 .form__input--additional::placeholder {
   padding-top: 0;
   padding-left: 17px;
-}
-
-.form__input--additional {
-  margin-top: 22px;
-  border: 2px solid v.$grey;
-  box-shadow: none;
-
-  @include m.tablet {
-    margin: 0;
-    margin-top: -20px;
-  }
-
-  @include m.desktop {
-    max-width: 700px;
-  }
 }
 
 .form__button-wrapper {
@@ -345,6 +341,7 @@
   font-family: inherit;
   font-size: 17px;
   line-height: 16px;
+
   @include m.tablet {
     padding-left: 30px;
     padding-right: 30px;
@@ -395,14 +392,14 @@
   }
 
   @include m.desktop {
-  right: 179px;
-  top: -50px;
+    right: 179px;
+    top: -50px;
   }
 }
 
-.form__input:hover+.form__icon,
-.form__input:focus+.form__icon,
-.form__input:active+.form__icon {
+.form__input:hover + .form__icon,
+.form__input:focus + .form__icon,
+.form__input:active + .form__icon {
   color: v.$accent;
   opacity: 1;
 }
