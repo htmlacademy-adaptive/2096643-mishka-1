@@ -3,6 +3,7 @@
 
 .about {
   margin-bottom: 58px;
+
   @include m.tablet {
     margin-bottom: 83px;
   }
@@ -14,7 +15,6 @@
 
 .about__title {
   margin-top: 31px;
-  margin-bottom: 82px;
   padding: 0;
   margin-bottom: 28px;
 
@@ -76,6 +76,7 @@
   background-image: url("../img/eco-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 17px;
+
   @include m.tablet {
     top: -4px;
     margin-bottom: 14px;
@@ -103,9 +104,11 @@
   background-image: url("../img/handmade-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 17px;
+
   @include m.tablet {
     margin-bottom: 18px;
   }
+
   @include m.desktop {
     top: 6px;
     margin-bottom: 25px;
@@ -128,12 +131,14 @@
   background-image: url("../img/price-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 22px;
-  @include m.tablet{
-  margin-bottom: 26px;
-}
-@include m.desktop {
-  margin-bottom: 24px;
-}
+
+  @include m.tablet {
+    margin-bottom: 26px;
+  }
+
+  @include m.desktop {
+    margin-bottom: 24px;
+  }
 }
 
 .about__item--support {
@@ -152,15 +157,17 @@
   background-image: url("../img/support-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 26px;
+
   @include m.tablet {
     margin-bottom: 30px;
   }
+
   @include m.desktop {
     margin-bottom: 28px;
   }
 }
 
-.about__item--likes{
+.about__item--likes {
   @include m.tablet {
     order: 5;
   }
@@ -176,6 +183,7 @@
   background-image: url("../img/likes-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 24px;
+
   @include m.tablet {
     margin-bottom: 24px;
   }
@@ -187,7 +195,7 @@
   }
 }
 
-.about__item--pack::before{
+.about__item--pack::before {
   position: relative;
   display: block;
   content: "";
@@ -197,6 +205,7 @@
   background-image: url("../img/gift-icon.svg");
   background-repeat: no-repeat;
   margin-bottom: 21px;
+
   @include m.tablet {
     top: -2px;
     margin-bottom: 20px;

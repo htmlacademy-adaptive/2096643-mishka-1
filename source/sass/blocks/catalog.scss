@@ -5,28 +5,29 @@
   @include m.desktop {
     margin-bottom: 57px;
   }
+
   @include m.desktop {
-    margin-bottom: 48px;
+    margin-bottom: 53px;
   }
 }
 
-.catalog__title{
-background-color: v.$silver;
-padding: 0;
-padding-top: 74px;
-padding-bottom: 74px;
-text-align: center;
+.catalog__title {
+  background-color: v.$silver;
+  padding: 0;
+  padding-top: 74px;
+  padding-bottom: 74px;
+  text-align: center;
 
-@include m.tablet {
-  position: relative;
-  padding-top: 100px;
-  padding-bottom: 75px;
-}
+  @include m.tablet {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
 
-@include m.desktop {
-  padding-top: 102px;
-  padding-bottom: 95px;
-}
+  @include m.desktop {
+    padding-top: 102px;
+    padding-bottom: 95px;
+  }
 }
 
 .catalog__title::after {
@@ -43,9 +44,14 @@ text-align: center;
   }
 
   @include m.desktop {
+    height: 32px;
+    background-size: cover;
+    bottom: -15px;
+  }
+
+  @include m.desktop-large {
     height: 34px;
     background-size: contain;
-    bottom: -20px;
   }
 }
 
@@ -68,4 +74,7 @@ text-align: center;
   }
 }
 
-
+.catalog__link {
+  text-decoration: none;
+  color: currentColor;
+}

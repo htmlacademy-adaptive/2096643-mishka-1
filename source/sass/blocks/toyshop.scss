@@ -126,12 +126,12 @@
 }
 
 .toyshop__item:hover .toyshop__icon {
-  opacity: 0.7
+  opacity: 0.7;
 }
 
 .toyshop__item:focus .toyshop__icon,
 .toyshop__item:active .toyshop__icon {
-  opacity: 0.3
+  opacity: 0.3;
 }
 
 .toyshop__icon--toy {
@@ -145,12 +145,12 @@
   }
 
   &:hover {
-    opacity: 0.7
+    opacity: 0.7;
   }
 
   &:focus,
   &:active {
-    opacity: 0.3
+    opacity: 0.3;
   }
 }
 
@@ -180,4 +180,3 @@
     padding-top: 26px;
   }
 }
-

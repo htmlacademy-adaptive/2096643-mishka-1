@@ -9,6 +9,12 @@
   align-self: center;
   width: 100%;
 
+  @include m.onli-mobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+  }
+
   @include m.tablet {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -23,6 +29,7 @@
 }
 
 .card__image {
+  display: block;
   width: 260px;
   height: 195px;
   background-color: v.$silver;
@@ -41,7 +48,7 @@
 .card__wrapper {
   display: flex;
   flex-direction: column;
-  padding:26px;
+  padding: 26px;
 
   @include m.tablet {
     justify-content: space-between;
@@ -85,6 +92,7 @@
   line-height: 30px;
   color: v.$grey;
   padding-bottom: 17px;
+
   @include m.tablet {
     font-size: 15px;
     padding-bottom: 0;
@@ -101,6 +109,7 @@
   justify-content: space-between;
   padding-top: 22px;
   border-top: 1px solid v.$light-grey;
+
   @include m.desktop {
     padding-top: 24px;
   }
@@ -110,6 +119,7 @@
   font-size: 15px;
   font-weight: 700;
   color: v.$dark;
+
   @include m.tablet {
     font-size: 17px;
   }
@@ -122,13 +132,19 @@
   opacity: 0.2;
   padding: 0;
 
+  @include m.desktop {
+    padding-right: 5px;
+  }
+
   &:hover,
   &:focus {
     color: v.$accent;
     opacity: 1;
+    background-color: transparent;
   }
 
   &:active {
     opacity: 0.3;
+    background-color: transparent;
   }
 }

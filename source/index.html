@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico">
@@ -38,11 +40,11 @@
               <use href="img/sprite.svg#search"></use>
             </svg>
             <span class="nav__button-text nav__button-text--search">Поиск по сайту</span></button></li>
-        <li class="nav__item user-nav__item"><button class="nav__button nav__button--box">
+        <li class="nav__item user-nav__item"><a class="nav__button nav__button--box" href="#">
             <svg class="nav__box-icon" width="20" height="19">
               <use href="img/sprite.svg#box"></use>
             </svg>
-            <span class="nav__button-text nav__button-text--box">Корзина: пока пуста</span></button>
+            <span class="nav__button-text nav__button-text--box">Корзина: пока пуста</span></a>
         </li>
       </ul>
       <ul class="nav__list sale-nav">
@@ -105,7 +107,7 @@
       </picture>
       <div class="featured__price-wrapper">
         <span class="featured__price">Цена: 990 руб.</span>
-        <button class="featured__button button" type="button">Заказать</button>
+        <a class="featured__button button" href="#" data-modal="open">Заказать</a>
       </div>
     </section>
     <section class="about container">
@@ -156,19 +158,19 @@
         </li>
       </ul>
       <ul class="reviews__slider">
-        <li><button class="reviews__toggle reviews__toggle--prev" type="button">
+        <li><button class="reviews__toggle reviews__toggle--prev" type="button" aria-label="Предыдущий отзыв.">
           <svg width="50" height="26">
             <use href="img/sprite.svg#arrow-left"></use>
           </svg>
         </button></li>
-        <li><button class="reviews__toggle reviews__toggle--next" type="button">
+        <li><button class="reviews__toggle reviews__toggle--next" type="button" aria-label="Следующий отзыв.">
           <svg width="50" height="26">
             <use href="img/sprite.svg#arrow-right"></use>
           </svg>
         </button></li>
 
       </ul>
-      <button class="reviews__button button" type="button">Написать</button>
+      <a class="reviews__button button" href="#">Написать</a>
     </section>
     <section class="contacts">
       <h2 class="contacts__title section-title section-title--mobile">Контакты</h2>
@@ -182,33 +184,33 @@
       </ul>
       <div class="contacts__map" id="map">
       </div>
-      <button class="contacts__button button" type="button">Напишите нам</button>
+      <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a class="footer__logo" href="#">
-        <svg class="footer__logo-image" width="102" height="35">
-          <use href="img/sprite.svg#logo"></use>"
+      <a class="footer__logo" href="#" aria-label="Логотип компании Mishka.">
+        <svg class="footer__logo-image" width="102" height="35" >
+        <use href="img/sprite.svg#logo"></use>
         </svg></a>
       <ul class="social">
-        <li class="social__item"><a class="social__link">
-            <svg class="social__icon" width="28" height="23">
-              <use href="img/sprite.svg#vk"></use>
+        <li class="social__item"><a class="social__link" href="#" aria-label="Наша группа во Вконтакте.">
+          <svg class="social__icon" width="28" height="23">
+          <use href="img/sprite.svg#vk"></use>
             </svg></a></li>
-        <li class="social__item"><a class="social__link">
-            <svg class="social__icon" width="28" height="23">
-              <use href="img/sprite.svg#youtube"></use>
+        <li class="social__item"><a class="social__link" href="#" aria-label="Наш канал на Youtube.">
+          <svg class="social__icon" width="28" height="23" >
+            <use href="img/sprite.svg#youtube"></use>
             </svg></a>
         </li>
-        <li class="social__item"><a class="social__link">
-            <svg class="social__icon" width="28" height="23">
-              <use href="img/sprite.svg#telegram"></use>
+        <li class="social__item"><a class="social__link" href="#" aria-label="Наш канал в Telegramm.">
+          <svg class="social__icon" width="28" height="23">
+          <use href="img/sprite.svg#telegram"></use>
             </svg></a></li>
       </ul>
       <div class="developed ">
         <p class="developed__text">Разработано</p>
-        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика.">
           <svg class="developed__icon" width="27" height="35">
             <use href="img/sprite.svg#htmlacademy"></use>
           </svg>
@@ -228,8 +230,7 @@
       <button class="button button--accent">Добавить</button>
     </div>
   </div>
-  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=639d79a4-05a5-4a93-b5c8-0d749b9d99f4"
-    type="text/javascript" defer></script>
+  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=639d79a4-05a5-4a93-b5c8-0d749b9d99f4" defer></script>
   <script src="./js/maps.js" defer></script>
   <script src="./js/script.js" defer></script>
 </body>

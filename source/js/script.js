@@ -14,7 +14,7 @@ navToggle.addEventListener('click', function () {
 });
 
 let modalWindow = document.querySelector('.modal');
-let modalToggle = document.querySelector('.featured__button');
+let modalOpenButtons = document.querySelectorAll('.button[data-modal="open"]');
 
 function openModal(modal) {
   modal.classList.add('modal--opened');
@@ -23,13 +23,16 @@ function closeModal(modal) {
   modal.classList.remove('modal--opened');
 }
 
-modalToggle.addEventListener('click', function () {
-  openModal(modalWindow)
-});
+modalOpenButtons.forEach((button) => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    openModal(modalWindow)
+  });
+})
 
-modalWindow.addEventListener('click', function(e) {
-  if(e.target.classList.contains('modal') || e.target.classList.contains('button') ){
+
+modalWindow.addEventListener('click', function (e) {
+  if (e.target.classList.contains('modal') || e.target.classList.contains('button')) {
     closeModal(modalWindow)
   }
 })
-

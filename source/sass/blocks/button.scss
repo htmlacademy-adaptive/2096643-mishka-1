@@ -6,17 +6,21 @@
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: v.$grey;
   background-color: transparent;
   padding-top: 14px;
   padding-bottom: 14px;
   border: 2px solid v.$grey;
   border-radius: 2px;
+
   @include m.tablet {
     font-size: 17px;
   }
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     background-color: v.$grey;
     color: v.$light;
   }
@@ -36,7 +40,10 @@
   border-color: v.$accent;
   align-self: center;
   padding-top: 17px;
-  &:hover {
+
+  &:hover,
+  &:active,
+  &:focus {
     background-color: v.$grey;
     border-color: v.$grey;
   }

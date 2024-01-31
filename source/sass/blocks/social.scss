@@ -10,13 +10,16 @@
   padding-bottom: 24px;
   background-color: v.$silver;
   border-bottom: 1px solid v.$light-silver;
-  @include m.tablet{
+
+  @include m.tablet {
     border: none;
     padding: 0;
   }
 }
 
-.social__icon {
+.social__link {
+  color: currentColor;
+
   &:hover,
   &:focus {
     color: v.$accent-extradark;

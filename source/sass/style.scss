@@ -1,6 +1,9 @@
 @use "./base/base.scss";
 @use "./base/fonts.scss";
 @use "./blocks/nav.scss";
+@use "./blocks/sale-nav.scss";
+@use "./blocks/user-nav.scss";
+@use "./blocks/site-nav.scss";
 @use "./blocks/toyshop.scss";
 @use "./blocks/section-title.scss";
 @use "./blocks/button.scss";
@@ -22,4 +25,3 @@
 @use "./blocks/control.scss";
 @use "./blocks/modal.scss";
 @use "./blocks/main-header.scss"
-
