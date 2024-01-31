@@ -8,7 +8,6 @@
   margin-bottom: 30px;
   align-self: center;
   width: 100%;
-  text-decoration: none;
 
   @include m.onli-mobile {
     margin-left: auto;
@@ -30,6 +29,7 @@
 }
 
 .card__image {
+  display: block;
   width: 260px;
   height: 195px;
   background-color: v.$silver;

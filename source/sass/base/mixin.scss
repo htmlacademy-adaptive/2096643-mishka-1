@@ -24,6 +24,12 @@
   }
 }
 
+@mixin desktop-large {
+  @media (min-width: v.$desktop-large-width) {
+    @content;
+  }
+}
+
 @mixin container {
   padding-left: 30px;
   padding-right: 30px;

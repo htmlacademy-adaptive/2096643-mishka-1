@@ -48,6 +48,11 @@
     background-size: cover;
     bottom: -15px;
   }
+
+  @include m.desktop-large {
+    height: 34px;
+    background-size: contain;
+  }
 }
 
 .catalog__list {
@@ -69,6 +74,7 @@
   }
 }
 
-.catalog__item {
-  display: flex;
+.catalog__link {
+  text-decoration: none;
+  color: currentColor;
 }

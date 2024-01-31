@@ -365,35 +365,31 @@
   position: absolute;
   color: v.$dark;
   opacity: 0.3;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .form__icon--tel {
   right: 37px;
-  top: -33px;
 
   @include m.tablet {
     right: 76px;
-    top: -52px;
   }
 
   @include m.desktop {
     right: 183px;
-    top: -52px;
   }
 }
 
 .form__icon--email {
   right: 33px;
-  top: -29px;
 
   @include m.tablet {
     right: 72px;
-    top: -50px;
   }
 
   @include m.desktop {
     right: 179px;
-    top: -50px;
   }
 }
 

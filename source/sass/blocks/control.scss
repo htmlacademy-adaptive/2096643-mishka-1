@@ -24,8 +24,7 @@
     height: 52px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     border-color: v.$accent;
   }
 
@@ -43,13 +42,14 @@
     width: 52px;
     height: 52px;
   }
+}
 
-  &:hover,
-  &:focus {
+.control__input {
+  &:focus ~ .control__marker {
     border-color: v.$accent;
   }
 
-  &:active {
+  &:active ~ .control__marker {
     border-color: v.$grey-opacity30;
   }
 }
