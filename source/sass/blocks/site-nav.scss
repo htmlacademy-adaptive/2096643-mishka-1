@@ -67,5 +67,6 @@
 .nav--nojs .site-nav {
   @include m.onli-mobile {
     position: static;
+    display: block;
   }
 }

@@ -49,5 +49,6 @@
 .nav--nojs .user-nav {
   @include m.onli-mobile {
     position: static;
+    display: block;
   }
 }
