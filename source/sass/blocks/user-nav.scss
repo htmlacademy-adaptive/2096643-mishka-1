@@ -19,6 +19,8 @@
     order: 3;
     margin: 0;
     padding-right: 50px;
+    margin-left: auto;
+    max-width: 410px;
   }
 }
 
@@ -31,24 +33,5 @@
     padding: 0;
     font-size: 17px;
     border-left: 1px solid v.$dark10;
-  }
-}
-
-.nav--closed .user-nav {
-  @include m.onli-mobile {
-    display: none;
-  }
-}
-
-.nav--opened .user-nav {
-  @include m.onli-mobile {
-    display: block;
-  }
-}
-
-.nav--nojs .user-nav {
-  @include m.onli-mobile {
-    position: static;
-    display: block;
   }
 }

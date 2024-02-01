@@ -22,6 +22,7 @@
     position: static;
     order: 1;
     gap: 23px;
+    max-width: 470px;
   }
 }
 
@@ -49,24 +50,5 @@
   @include m.desktop {
     padding-left: 12px;
     padding-right: 42px;
-  }
-}
-
-.nav--closed .site-nav {
-  @include m.onli-mobile {
-    display: none;
-  }
-}
-
-.nav--opened .site-nav {
-  @include m.onli-mobile {
-    display: block;
-  }
-}
-
-.nav--nojs .site-nav {
-  @include m.onli-mobile {
-    position: static;
-    display: block;
   }
 }
