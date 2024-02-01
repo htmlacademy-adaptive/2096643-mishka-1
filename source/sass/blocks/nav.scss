@@ -12,10 +12,10 @@
   }
 
   @include m.desktop {
-    justify-content: space-between;
     max-width: 1150px;
     padding: 0;
     margin: 0 auto;
+    gap: 33px;
   }
 }
 
@@ -46,7 +46,7 @@
   }
 
   @include m.desktop {
-    margin-left: -70px;
+    // margin-left: -70px;
   }
 
   &:hover {
@@ -215,8 +215,47 @@
   transform: rotate(45deg);
 }
 
+.nav--closed .site-nav {
+  @include m.onli-mobile {
+    display: none;
+  }
+}
+
+.nav--opened .site-nav {
+  @include m.onli-mobile {
+    display: block;
+  }
+}
+
+.nav--nojs .site-nav {
+  @include m.onli-mobile {
+    position: static;
+    display: block;
+  }
+}
+
+
 .nav--nojs .nav__toggle {
   @include m.onli-mobile {
     display: none;
+  }
+}
+
+.nav--closed .user-nav {
+  @include m.onli-mobile {
+    display: none;
+  }
+}
+
+.nav--opened .user-nav {
+  @include m.onli-mobile {
+    display: block;
+  }
+}
+
+.nav--nojs .user-nav {
+  @include m.onli-mobile {
+    position: static;
+    display: block;
   }
 }

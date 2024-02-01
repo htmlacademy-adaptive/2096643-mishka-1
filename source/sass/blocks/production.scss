@@ -13,15 +13,15 @@
   @include m.tablet {
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 48px;
-    margin-bottom: 63px;
+    margin-top: 53px;
+    margin-bottom: 66px;
   }
 
   @include m.desktop {
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 104px;
+    margin-bottom: 102px;
     padding-left: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -74,17 +74,19 @@
   content: "";
   width: 32px;
   height: 22px;
-  top: 37px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   background-image: url("../img/video-icon.svg");
   background-repeat: no-repeat;
 
   @include m.tablet {
-    top: 38px;
+    top: 54%;
     left: 41px;
   }
 
   @include m.desktop {
-    top: 47px;
+    top: 38%;
     left: 0;
   }
 }
@@ -106,6 +108,7 @@
     order: 3;
     padding-top: 0;
     line-height: 30px;
+    margin-bottom: 39px;
   }
 
   @include m.desktop {
